@@ -1,0 +1,83 @@
+[
+  {
+    "requirementId": "MATREQ-B01",
+    "entityId": "B01",
+    "taskId": "OUTFIT",
+    "materialLotId": "MAT-B01",
+    "needByDay": 40,
+    "requiredQty": 100,
+    "critical": true
+  },
+  {
+    "requirementId": "MATREQ-B02",
+    "entityId": "B02",
+    "taskId": "OUTFIT",
+    "materialLotId": "MAT-B02",
+    "needByDay": 40,
+    "requiredQty": 100,
+    "critical": true
+  },
+  {
+    "requirementId": "MATREQ-B03",
+    "entityId": "B03",
+    "taskId": "OUTFIT",
+    "materialLotId": "MAT-B03",
+    "needByDay": 40,
+    "requiredQty": 100,
+    "critical": true
+  },
+  {
+    "requirementId": "MATREQ-B04",
+    "entityId": "B04",
+    "taskId": "OUTFIT",
+    "materialLotId": "MAT-B04",
+    "needByDay": 40,
+    "requiredQty": 100,
+    "critical": true
+  },
+  {
+    "requirementId": "MATREQ-B05",
+    "entityId": "B05",
+    "taskId": "OUTFIT",
+    "materialLotId": "MAT-B05",
+    "needByDay": 40,
+    "requiredQty": 100,
+    "critical": true
+  },
+  {
+    "requirementId": "MATREQ-B06",
+    "entityId": "B06",
+    "taskId": "OUTFIT",
+    "materialLotId": "MAT-B06",
+    "needByDay": 40,
+    "requiredQty": 100,
+    "critical": true
+  },
+  {
+    "requirementId": "MATREQ-B07",
+    "entityId": "B07",
+    "taskId": "OUTFIT",
+    "materialLotId": "MAT-B07",
+    "needByDay": 40,
+    "requiredQty": 100,
+    "critical": true
+  },
+  {
+    "requirementId": "MATREQ-B08",
+    "entityId": "B08",
+    "taskId": "OUTFIT",
+    "materialLotId": "MAT-B08",
+    "needByDay": 40,
+    "requiredQty": 100,
+    "critical": true
+  },
+  {
+    "requirementId": "MATREQ-B09",
+    "entityId": "B09",
+    "taskId": "OUTFIT",
+    "materialLotId": "MAT-B09",
+    "needByDay": 40,
+    "requiredQty": 100,
+    "critical": true
+  }
+]

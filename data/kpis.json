@@ -1,0 +1,32 @@
+[
+  {
+    "id": "overall",
+    "label": "Overall progress",
+    "value": 68,
+    "unit": "%",
+    "basis": "Illustrative project-level fixture; not a block average",
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "id": "delivery",
+    "label": "Baseline delivery",
+    "value": 60,
+    "unit": "day",
+    "basis": "P02 baseline, not an actual delivery date",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  }
+]

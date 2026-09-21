@@ -1,0 +1,751 @@
+[
+  {
+    "dependencyId": "DEP-MAT-FAB-B01",
+    "predecessorTaskId": "MAT",
+    "successorTaskId": "FAB-B01",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-FAB-B01-SUB-B01",
+    "predecessorTaskId": "FAB-B01",
+    "successorTaskId": "SUB-B01",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-SUB-B01-BA-B01",
+    "predecessorTaskId": "SUB-B01",
+    "successorTaskId": "BA-B01",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-BA-B01-ASM-B01",
+    "predecessorTaskId": "BA-B01",
+    "successorTaskId": "ASM-B01",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-ASM-B01-QG-B01",
+    "predecessorTaskId": "ASM-B01",
+    "successorTaskId": "QG-B01",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-MAT-FAB-B02",
+    "predecessorTaskId": "MAT",
+    "successorTaskId": "FAB-B02",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-FAB-B02-SUB-B02",
+    "predecessorTaskId": "FAB-B02",
+    "successorTaskId": "SUB-B02",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-SUB-B02-BA-B02",
+    "predecessorTaskId": "SUB-B02",
+    "successorTaskId": "BA-B02",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-BA-B02-ASM-B02",
+    "predecessorTaskId": "BA-B02",
+    "successorTaskId": "ASM-B02",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-ASM-B02-QG-B02",
+    "predecessorTaskId": "ASM-B02",
+    "successorTaskId": "QG-B02",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-MAT-FAB-B03",
+    "predecessorTaskId": "MAT",
+    "successorTaskId": "FAB-B03",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-FAB-B03-SUB-B03",
+    "predecessorTaskId": "FAB-B03",
+    "successorTaskId": "SUB-B03",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-SUB-B03-BA-B03",
+    "predecessorTaskId": "SUB-B03",
+    "successorTaskId": "BA-B03",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-BA-B03-ASM-B03",
+    "predecessorTaskId": "BA-B03",
+    "successorTaskId": "ASM-B03",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-ASM-B03-QG-B03",
+    "predecessorTaskId": "ASM-B03",
+    "successorTaskId": "QG-B03",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-MAT-FAB-B04",
+    "predecessorTaskId": "MAT",
+    "successorTaskId": "FAB-B04",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-FAB-B04-SUB-B04",
+    "predecessorTaskId": "FAB-B04",
+    "successorTaskId": "SUB-B04",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-SUB-B04-BA-B04",
+    "predecessorTaskId": "SUB-B04",
+    "successorTaskId": "BA-B04",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-BA-B04-ASM-B04",
+    "predecessorTaskId": "BA-B04",
+    "successorTaskId": "ASM-B04",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-ASM-B04-QG-B04",
+    "predecessorTaskId": "ASM-B04",
+    "successorTaskId": "QG-B04",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-MAT-FAB-B05",
+    "predecessorTaskId": "MAT",
+    "successorTaskId": "FAB-B05",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-FAB-B05-SUB-B05",
+    "predecessorTaskId": "FAB-B05",
+    "successorTaskId": "SUB-B05",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-SUB-B05-BA-B05",
+    "predecessorTaskId": "SUB-B05",
+    "successorTaskId": "BA-B05",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-BA-B05-ASM-B05",
+    "predecessorTaskId": "BA-B05",
+    "successorTaskId": "ASM-B05",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-ASM-B05-QG-B05",
+    "predecessorTaskId": "ASM-B05",
+    "successorTaskId": "QG-B05",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-MAT-FAB-B06",
+    "predecessorTaskId": "MAT",
+    "successorTaskId": "FAB-B06",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-FAB-B06-SUB-B06",
+    "predecessorTaskId": "FAB-B06",
+    "successorTaskId": "SUB-B06",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-SUB-B06-BA-B06",
+    "predecessorTaskId": "SUB-B06",
+    "successorTaskId": "BA-B06",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-BA-B06-ASM-B06",
+    "predecessorTaskId": "BA-B06",
+    "successorTaskId": "ASM-B06",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-ASM-B06-QG-B06",
+    "predecessorTaskId": "ASM-B06",
+    "successorTaskId": "QG-B06",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-MAT-FAB-B07",
+    "predecessorTaskId": "MAT",
+    "successorTaskId": "FAB-B07",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-FAB-B07-SUB-B07",
+    "predecessorTaskId": "FAB-B07",
+    "successorTaskId": "SUB-B07",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-SUB-B07-BA-B07",
+    "predecessorTaskId": "SUB-B07",
+    "successorTaskId": "BA-B07",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-BA-B07-ASM-B07",
+    "predecessorTaskId": "BA-B07",
+    "successorTaskId": "ASM-B07",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-ASM-B07-QG-B07",
+    "predecessorTaskId": "ASM-B07",
+    "successorTaskId": "QG-B07",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-MAT-FAB-B08",
+    "predecessorTaskId": "MAT",
+    "successorTaskId": "FAB-B08",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-FAB-B08-SUB-B08",
+    "predecessorTaskId": "FAB-B08",
+    "successorTaskId": "SUB-B08",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-SUB-B08-BA-B08",
+    "predecessorTaskId": "SUB-B08",
+    "successorTaskId": "BA-B08",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-BA-B08-ASM-B08",
+    "predecessorTaskId": "BA-B08",
+    "successorTaskId": "ASM-B08",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-ASM-B08-QG-B08",
+    "predecessorTaskId": "ASM-B08",
+    "successorTaskId": "QG-B08",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-MAT-FAB-B09",
+    "predecessorTaskId": "MAT",
+    "successorTaskId": "FAB-B09",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-FAB-B09-SUB-B09",
+    "predecessorTaskId": "FAB-B09",
+    "successorTaskId": "SUB-B09",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-SUB-B09-BA-B09",
+    "predecessorTaskId": "SUB-B09",
+    "successorTaskId": "BA-B09",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-BA-B09-ASM-B09",
+    "predecessorTaskId": "BA-B09",
+    "successorTaskId": "ASM-B09",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-ASM-B09-QG-B09",
+    "predecessorTaskId": "ASM-B09",
+    "successorTaskId": "QG-B09",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-QG-B05-E-B05",
+    "predecessorTaskId": "QG-B05",
+    "successorTaskId": "E-B05",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-DOCK_READY-E-B05",
+    "predecessorTaskId": "DOCK_READY",
+    "successorTaskId": "E-B05",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-QG-B04-E-B04",
+    "predecessorTaskId": "QG-B04",
+    "successorTaskId": "E-B04",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B05-E-B04",
+    "predecessorTaskId": "E-B05",
+    "successorTaskId": "E-B04",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-QG-B06-E-B06",
+    "predecessorTaskId": "QG-B06",
+    "successorTaskId": "E-B06",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B05-E-B06",
+    "predecessorTaskId": "E-B05",
+    "successorTaskId": "E-B06",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B04-E-B06",
+    "predecessorTaskId": "E-B04",
+    "successorTaskId": "E-B06",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-QG-B03-E-B03",
+    "predecessorTaskId": "QG-B03",
+    "successorTaskId": "E-B03",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B04-E-B03",
+    "predecessorTaskId": "E-B04",
+    "successorTaskId": "E-B03",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B06-E-B03",
+    "predecessorTaskId": "E-B06",
+    "successorTaskId": "E-B03",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-QG-B07-E-B07",
+    "predecessorTaskId": "QG-B07",
+    "successorTaskId": "E-B07",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B06-E-B07",
+    "predecessorTaskId": "E-B06",
+    "successorTaskId": "E-B07",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B03-E-B07",
+    "predecessorTaskId": "E-B03",
+    "successorTaskId": "E-B07",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-QG-B08-E-B08",
+    "predecessorTaskId": "QG-B08",
+    "successorTaskId": "E-B08",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B07-E-B08",
+    "predecessorTaskId": "E-B07",
+    "successorTaskId": "E-B08",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-QG-B09-E-B09",
+    "predecessorTaskId": "QG-B09",
+    "successorTaskId": "E-B09",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B08-E-B09",
+    "predecessorTaskId": "E-B08",
+    "successorTaskId": "E-B09",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-QG-B02-E-B02",
+    "predecessorTaskId": "QG-B02",
+    "successorTaskId": "E-B02",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B03-E-B02",
+    "predecessorTaskId": "E-B03",
+    "successorTaskId": "E-B02",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B09-E-B02",
+    "predecessorTaskId": "E-B09",
+    "successorTaskId": "E-B02",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-QG-B01-E-B01",
+    "predecessorTaskId": "QG-B01",
+    "successorTaskId": "E-B01",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B02-E-B01",
+    "predecessorTaskId": "E-B02",
+    "successorTaskId": "E-B01",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-ENG-MAT",
+    "predecessorTaskId": "ENG",
+    "successorTaskId": "MAT",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-ENG-LONGLEAD",
+    "predecessorTaskId": "ENG",
+    "successorTaskId": "LONGLEAD",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-MAT-DOCK_READY",
+    "predecessorTaskId": "MAT",
+    "successorTaskId": "DOCK_READY",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-MAT-WC_FND_FAB",
+    "predecessorTaskId": "MAT",
+    "successorTaskId": "WC_FND_FAB",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-WC_FND_FAB-WC_FND_QG",
+    "predecessorTaskId": "WC_FND_FAB",
+    "successorTaskId": "WC_FND_QG",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B01-HULL_GATE",
+    "predecessorTaskId": "E-B01",
+    "successorTaskId": "HULL_GATE",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B02-HULL_GATE",
+    "predecessorTaskId": "E-B02",
+    "successorTaskId": "HULL_GATE",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B03-HULL_GATE",
+    "predecessorTaskId": "E-B03",
+    "successorTaskId": "HULL_GATE",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B04-HULL_GATE",
+    "predecessorTaskId": "E-B04",
+    "successorTaskId": "HULL_GATE",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B05-HULL_GATE",
+    "predecessorTaskId": "E-B05",
+    "successorTaskId": "HULL_GATE",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B06-HULL_GATE",
+    "predecessorTaskId": "E-B06",
+    "successorTaskId": "HULL_GATE",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B07-HULL_GATE",
+    "predecessorTaskId": "E-B07",
+    "successorTaskId": "HULL_GATE",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B08-HULL_GATE",
+    "predecessorTaskId": "E-B08",
+    "successorTaskId": "HULL_GATE",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B09-HULL_GATE",
+    "predecessorTaskId": "E-B09",
+    "successorTaskId": "HULL_GATE",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-HULL_GATE-CCS",
+    "predecessorTaskId": "HULL_GATE",
+    "successorTaskId": "CCS",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-LONGLEAD-CCS",
+    "predecessorTaskId": "LONGLEAD",
+    "successorTaskId": "CCS",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B02-WC_FND_INSTALL",
+    "predecessorTaskId": "E-B02",
+    "successorTaskId": "WC_FND_INSTALL",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-WC_FND_QG-WC_FND_INSTALL",
+    "predecessorTaskId": "WC_FND_QG",
+    "successorTaskId": "WC_FND_INSTALL",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-LONGLEAD-WC_FND_INSTALL",
+    "predecessorTaskId": "LONGLEAD",
+    "successorTaskId": "WC_FND_INSTALL",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-WC_FND_INSTALL-WC_LIFT",
+    "predecessorTaskId": "WC_FND_INSTALL",
+    "successorTaskId": "WC_LIFT",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-WC_LIFT-WC_DRIVE",
+    "predecessorTaskId": "WC_LIFT",
+    "successorTaskId": "WC_DRIVE",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-WC_DRIVE-WC_ELECTRICAL",
+    "predecessorTaskId": "WC_DRIVE",
+    "successorTaskId": "WC_ELECTRICAL",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-WC_ELECTRICAL-WC_CONTROL",
+    "predecessorTaskId": "WC_ELECTRICAL",
+    "successorTaskId": "WC_CONTROL",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-WC_CONTROL-WC_TEST",
+    "predecessorTaskId": "WC_CONTROL",
+    "successorTaskId": "WC_TEST",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B08-MACH",
+    "predecessorTaskId": "E-B08",
+    "successorTaskId": "MACH",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-LONGLEAD-MACH",
+    "predecessorTaskId": "LONGLEAD",
+    "successorTaskId": "MACH",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-E-B08-ACC",
+    "predecessorTaskId": "E-B08",
+    "successorTaskId": "ACC",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-LONGLEAD-ACC",
+    "predecessorTaskId": "LONGLEAD",
+    "successorTaskId": "ACC",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-HULL_GATE-OUTFIT",
+    "predecessorTaskId": "HULL_GATE",
+    "successorTaskId": "OUTFIT",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-LONGLEAD-OUTFIT",
+    "predecessorTaskId": "LONGLEAD",
+    "successorTaskId": "OUTFIT",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-CCS-COM",
+    "predecessorTaskId": "CCS",
+    "successorTaskId": "COM",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-WC_TEST-COM",
+    "predecessorTaskId": "WC_TEST",
+    "successorTaskId": "COM",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-MACH-COM",
+    "predecessorTaskId": "MACH",
+    "successorTaskId": "COM",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-ACC-COM",
+    "predecessorTaskId": "ACC",
+    "successorTaskId": "COM",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-OUTFIT-COM",
+    "predecessorTaskId": "OUTFIT",
+    "successorTaskId": "COM",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-COM-HAT",
+    "predecessorTaskId": "COM",
+    "successorTaskId": "HAT",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-HAT-SAT",
+    "predecessorTaskId": "HAT",
+    "successorTaskId": "SAT",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-HAT-GAS",
+    "predecessorTaskId": "HAT",
+    "successorTaskId": "GAS",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-SAT-DEL",
+    "predecessorTaskId": "SAT",
+    "successorTaskId": "DEL",
+    "type": "FS",
+    "lagDays": 0
+  },
+  {
+    "dependencyId": "DEP-GAS-DEL",
+    "predecessorTaskId": "GAS",
+    "successorTaskId": "DEL",
+    "type": "FS",
+    "lagDays": 0
+  }
+]

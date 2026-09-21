@@ -1,0 +1,21 @@
+{
+  "datasetId": "LNGC-DEMO-01",
+  "datasetVersion": "p02-v2-p05-v1",
+  "schemaVersion": "1.0",
+  "observationDay": 25,
+  "note": "Simulation Blocks, not official Hanwha Ocean block IDs. No actual yard data.",
+  "sources": [
+    {
+      "id": "P02",
+      "title": "LNGC-MR-02 v2.0"
+    },
+    {
+      "id": "P02-VESSEL-REFERENCE",
+      "title": "Verified particulars transcribed from P02; not reverified here"
+    },
+    {
+      "id": "MOCK-OPS-01",
+      "title": "P05 illustrative operational fixture"
+    }
+  ]
+}

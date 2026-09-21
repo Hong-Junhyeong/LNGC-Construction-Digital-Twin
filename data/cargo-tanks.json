@@ -1,0 +1,104 @@
+[
+  {
+    "entityId": "T01",
+    "vesselId": "LNGC-EDU-01",
+    "relatedBlockIds": [
+      "B03"
+    ],
+    "tankKind": "GENERIC_MEMBRANE_LOGICAL_TANK",
+    "actualCapacityM3": {
+      "value": null,
+      "dataMeta": {
+        "sourceType": null,
+        "availability": "UNKNOWN",
+        "sourceIds": [],
+        "asOf": null
+      }
+    },
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "entityId": "T02",
+    "vesselId": "LNGC-EDU-01",
+    "relatedBlockIds": [
+      "B04",
+      "B05"
+    ],
+    "tankKind": "GENERIC_MEMBRANE_LOGICAL_TANK",
+    "actualCapacityM3": {
+      "value": null,
+      "dataMeta": {
+        "sourceType": null,
+        "availability": "UNKNOWN",
+        "sourceIds": [],
+        "asOf": null
+      }
+    },
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "entityId": "T03",
+    "vesselId": "LNGC-EDU-01",
+    "relatedBlockIds": [
+      "B05",
+      "B06"
+    ],
+    "tankKind": "GENERIC_MEMBRANE_LOGICAL_TANK",
+    "actualCapacityM3": {
+      "value": null,
+      "dataMeta": {
+        "sourceType": null,
+        "availability": "UNKNOWN",
+        "sourceIds": [],
+        "asOf": null
+      }
+    },
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "entityId": "T04",
+    "vesselId": "LNGC-EDU-01",
+    "relatedBlockIds": [
+      "B07"
+    ],
+    "tankKind": "GENERIC_MEMBRANE_LOGICAL_TANK",
+    "actualCapacityM3": {
+      "value": null,
+      "dataMeta": {
+        "sourceType": null,
+        "availability": "UNKNOWN",
+        "sourceIds": [],
+        "asOf": null
+      }
+    },
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  }
+]

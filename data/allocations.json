@@ -1,0 +1,62 @@
+[
+  {
+    "allocationId": "ALLOC-E-B01",
+    "taskId": "E-B01",
+    "resourceId": "RES-ERECTION-SLOT-01",
+    "demand": 1
+  },
+  {
+    "allocationId": "ALLOC-E-B02",
+    "taskId": "E-B02",
+    "resourceId": "RES-ERECTION-SLOT-01",
+    "demand": 1
+  },
+  {
+    "allocationId": "ALLOC-E-B03",
+    "taskId": "E-B03",
+    "resourceId": "RES-ERECTION-SLOT-01",
+    "demand": 1
+  },
+  {
+    "allocationId": "ALLOC-E-B04",
+    "taskId": "E-B04",
+    "resourceId": "RES-ERECTION-SLOT-01",
+    "demand": 1
+  },
+  {
+    "allocationId": "ALLOC-E-B05",
+    "taskId": "E-B05",
+    "resourceId": "RES-ERECTION-SLOT-01",
+    "demand": 1
+  },
+  {
+    "allocationId": "ALLOC-E-B06",
+    "taskId": "E-B06",
+    "resourceId": "RES-ERECTION-SLOT-01",
+    "demand": 1
+  },
+  {
+    "allocationId": "ALLOC-E-B07",
+    "taskId": "E-B07",
+    "resourceId": "RES-ERECTION-SLOT-01",
+    "demand": 1
+  },
+  {
+    "allocationId": "ALLOC-E-B08",
+    "taskId": "E-B08",
+    "resourceId": "RES-ERECTION-SLOT-01",
+    "demand": 1
+  },
+  {
+    "allocationId": "ALLOC-E-B09",
+    "taskId": "E-B09",
+    "resourceId": "RES-ERECTION-SLOT-01",
+    "demand": 1
+  },
+  {
+    "allocationId": "ALLOC-WC-LIFT",
+    "taskId": "WC_LIFT",
+    "resourceId": "RES-WC-SLOT-01",
+    "demand": 1
+  }
+]

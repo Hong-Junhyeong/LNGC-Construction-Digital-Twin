@@ -1,0 +1,191 @@
+[
+  {
+    "inspectionId": "INSP-E-B01-01",
+    "objectId": "B01/SHELL",
+    "taskId": "E-B01",
+    "weldingProgressPct": 100,
+    "inspectedCount": 40,
+    "passCount": 40,
+    "ndtStatus": "PASS",
+    "openNcrCount": 0,
+    "reworkManHours": 0,
+    "gateStatus": "RELEASED",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "inspectionId": "INSP-E-B02-01",
+    "objectId": "B02/SHELL",
+    "taskId": "E-B02",
+    "weldingProgressPct": 100,
+    "inspectedCount": 40,
+    "passCount": 40,
+    "ndtStatus": "PASS",
+    "openNcrCount": 0,
+    "reworkManHours": 0,
+    "gateStatus": "RELEASED",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "inspectionId": "INSP-E-B03-01",
+    "objectId": "B03/SHELL",
+    "taskId": "E-B03",
+    "weldingProgressPct": 100,
+    "inspectedCount": 40,
+    "passCount": 40,
+    "ndtStatus": "PASS",
+    "openNcrCount": 0,
+    "reworkManHours": 0,
+    "gateStatus": "RELEASED",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "inspectionId": "INSP-E-B04-01",
+    "objectId": "B04/SHELL",
+    "taskId": "E-B04",
+    "weldingProgressPct": 92,
+    "inspectedCount": 40,
+    "passCount": 38,
+    "ndtStatus": "HOLD",
+    "openNcrCount": 1,
+    "reworkManHours": 48,
+    "gateStatus": "BLOCKED",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "inspectionId": "INSP-E-B05-01",
+    "objectId": "B05/SHELL",
+    "taskId": "E-B05",
+    "weldingProgressPct": 100,
+    "inspectedCount": 40,
+    "passCount": 40,
+    "ndtStatus": "PASS",
+    "openNcrCount": 0,
+    "reworkManHours": 0,
+    "gateStatus": "RELEASED",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "inspectionId": "INSP-E-B06-01",
+    "objectId": "B06/SHELL",
+    "taskId": "E-B06",
+    "weldingProgressPct": 100,
+    "inspectedCount": 40,
+    "passCount": 40,
+    "ndtStatus": "PASS",
+    "openNcrCount": 0,
+    "reworkManHours": 0,
+    "gateStatus": "RELEASED",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "inspectionId": "INSP-E-B07-01",
+    "objectId": "B07/SHELL",
+    "taskId": "E-B07",
+    "weldingProgressPct": 100,
+    "inspectedCount": 40,
+    "passCount": 40,
+    "ndtStatus": "PASS",
+    "openNcrCount": 0,
+    "reworkManHours": 0,
+    "gateStatus": "RELEASED",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "inspectionId": "INSP-E-B08-01",
+    "objectId": "B08/SHELL",
+    "taskId": "E-B08",
+    "weldingProgressPct": 100,
+    "inspectedCount": 40,
+    "passCount": 40,
+    "ndtStatus": "PASS",
+    "openNcrCount": 0,
+    "reworkManHours": 0,
+    "gateStatus": "RELEASED",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "inspectionId": "INSP-E-B09-01",
+    "objectId": "B09/SHELL",
+    "taskId": "E-B09",
+    "weldingProgressPct": 100,
+    "inspectedCount": 40,
+    "passCount": 40,
+    "ndtStatus": "PASS",
+    "openNcrCount": 0,
+    "reworkManHours": 0,
+    "gateStatus": "RELEASED",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  }
+]

@@ -1,0 +1,1750 @@
+[
+  {
+    "taskId": "FAB-B01",
+    "name": "FAB · B01",
+    "entityIds": [
+      "B01"
+    ],
+    "objectIds": [
+      "B01/SHELL"
+    ],
+    "stage": "FABRICATION",
+    "baselineStartDay": 6,
+    "baselineFinishDay": 8,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "SUB-B01",
+    "name": "SUB · B01",
+    "entityIds": [
+      "B01"
+    ],
+    "objectIds": [
+      "B01/SHELL"
+    ],
+    "stage": "SUB_ASSEMBLY",
+    "baselineStartDay": 8,
+    "baselineFinishDay": 11,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "BA-B01",
+    "name": "BA · B01",
+    "entityIds": [
+      "B01"
+    ],
+    "objectIds": [
+      "B01/SHELL"
+    ],
+    "stage": "BLOCK_ASSEMBLY",
+    "baselineStartDay": 11,
+    "baselineFinishDay": 14,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "ASM-B01",
+    "name": "ASM · B01",
+    "entityIds": [
+      "B01"
+    ],
+    "objectIds": [
+      "B01/SHELL"
+    ],
+    "stage": "GRAND_ASSEMBLY",
+    "baselineStartDay": 14,
+    "baselineFinishDay": 18,
+    "durationDays": 4,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "QG-B01",
+    "name": "QG · B01",
+    "entityIds": [
+      "B01"
+    ],
+    "objectIds": [
+      "B01/SHELL"
+    ],
+    "stage": "INSPECTION",
+    "baselineStartDay": 18,
+    "baselineFinishDay": 20,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "FAB-B02",
+    "name": "FAB · B02",
+    "entityIds": [
+      "B02"
+    ],
+    "objectIds": [
+      "B02/SHELL"
+    ],
+    "stage": "FABRICATION",
+    "baselineStartDay": 6,
+    "baselineFinishDay": 8,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "SUB-B02",
+    "name": "SUB · B02",
+    "entityIds": [
+      "B02"
+    ],
+    "objectIds": [
+      "B02/SHELL"
+    ],
+    "stage": "SUB_ASSEMBLY",
+    "baselineStartDay": 8,
+    "baselineFinishDay": 11,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "BA-B02",
+    "name": "BA · B02",
+    "entityIds": [
+      "B02"
+    ],
+    "objectIds": [
+      "B02/SHELL"
+    ],
+    "stage": "BLOCK_ASSEMBLY",
+    "baselineStartDay": 11,
+    "baselineFinishDay": 14,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "ASM-B02",
+    "name": "ASM · B02",
+    "entityIds": [
+      "B02"
+    ],
+    "objectIds": [
+      "B02/SHELL"
+    ],
+    "stage": "GRAND_ASSEMBLY",
+    "baselineStartDay": 14,
+    "baselineFinishDay": 18,
+    "durationDays": 4,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "QG-B02",
+    "name": "QG · B02",
+    "entityIds": [
+      "B02"
+    ],
+    "objectIds": [
+      "B02/SHELL"
+    ],
+    "stage": "INSPECTION",
+    "baselineStartDay": 18,
+    "baselineFinishDay": 20,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "FAB-B03",
+    "name": "FAB · B03",
+    "entityIds": [
+      "B03"
+    ],
+    "objectIds": [
+      "B03/SHELL"
+    ],
+    "stage": "FABRICATION",
+    "baselineStartDay": 6,
+    "baselineFinishDay": 8,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "SUB-B03",
+    "name": "SUB · B03",
+    "entityIds": [
+      "B03"
+    ],
+    "objectIds": [
+      "B03/SHELL"
+    ],
+    "stage": "SUB_ASSEMBLY",
+    "baselineStartDay": 8,
+    "baselineFinishDay": 11,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "BA-B03",
+    "name": "BA · B03",
+    "entityIds": [
+      "B03"
+    ],
+    "objectIds": [
+      "B03/SHELL"
+    ],
+    "stage": "BLOCK_ASSEMBLY",
+    "baselineStartDay": 11,
+    "baselineFinishDay": 14,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "ASM-B03",
+    "name": "ASM · B03",
+    "entityIds": [
+      "B03"
+    ],
+    "objectIds": [
+      "B03/SHELL"
+    ],
+    "stage": "GRAND_ASSEMBLY",
+    "baselineStartDay": 14,
+    "baselineFinishDay": 18,
+    "durationDays": 4,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "QG-B03",
+    "name": "QG · B03",
+    "entityIds": [
+      "B03"
+    ],
+    "objectIds": [
+      "B03/SHELL"
+    ],
+    "stage": "INSPECTION",
+    "baselineStartDay": 18,
+    "baselineFinishDay": 20,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "FAB-B04",
+    "name": "FAB · B04",
+    "entityIds": [
+      "B04"
+    ],
+    "objectIds": [
+      "B04/SHELL"
+    ],
+    "stage": "FABRICATION",
+    "baselineStartDay": 6,
+    "baselineFinishDay": 8,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "SUB-B04",
+    "name": "SUB · B04",
+    "entityIds": [
+      "B04"
+    ],
+    "objectIds": [
+      "B04/SHELL"
+    ],
+    "stage": "SUB_ASSEMBLY",
+    "baselineStartDay": 8,
+    "baselineFinishDay": 11,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "BA-B04",
+    "name": "BA · B04",
+    "entityIds": [
+      "B04"
+    ],
+    "objectIds": [
+      "B04/SHELL"
+    ],
+    "stage": "BLOCK_ASSEMBLY",
+    "baselineStartDay": 11,
+    "baselineFinishDay": 14,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "ASM-B04",
+    "name": "ASM · B04",
+    "entityIds": [
+      "B04"
+    ],
+    "objectIds": [
+      "B04/SHELL"
+    ],
+    "stage": "GRAND_ASSEMBLY",
+    "baselineStartDay": 14,
+    "baselineFinishDay": 18,
+    "durationDays": 4,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "QG-B04",
+    "name": "QG · B04",
+    "entityIds": [
+      "B04"
+    ],
+    "objectIds": [
+      "B04/SHELL"
+    ],
+    "stage": "INSPECTION",
+    "baselineStartDay": 18,
+    "baselineFinishDay": 20,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "FAB-B05",
+    "name": "FAB · B05",
+    "entityIds": [
+      "B05"
+    ],
+    "objectIds": [
+      "B05/SHELL"
+    ],
+    "stage": "FABRICATION",
+    "baselineStartDay": 6,
+    "baselineFinishDay": 8,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "SUB-B05",
+    "name": "SUB · B05",
+    "entityIds": [
+      "B05"
+    ],
+    "objectIds": [
+      "B05/SHELL"
+    ],
+    "stage": "SUB_ASSEMBLY",
+    "baselineStartDay": 8,
+    "baselineFinishDay": 11,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "BA-B05",
+    "name": "BA · B05",
+    "entityIds": [
+      "B05"
+    ],
+    "objectIds": [
+      "B05/SHELL"
+    ],
+    "stage": "BLOCK_ASSEMBLY",
+    "baselineStartDay": 11,
+    "baselineFinishDay": 14,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "ASM-B05",
+    "name": "ASM · B05",
+    "entityIds": [
+      "B05"
+    ],
+    "objectIds": [
+      "B05/SHELL"
+    ],
+    "stage": "GRAND_ASSEMBLY",
+    "baselineStartDay": 14,
+    "baselineFinishDay": 18,
+    "durationDays": 4,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "QG-B05",
+    "name": "QG · B05",
+    "entityIds": [
+      "B05"
+    ],
+    "objectIds": [
+      "B05/SHELL"
+    ],
+    "stage": "INSPECTION",
+    "baselineStartDay": 18,
+    "baselineFinishDay": 20,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "FAB-B06",
+    "name": "FAB · B06",
+    "entityIds": [
+      "B06"
+    ],
+    "objectIds": [
+      "B06/SHELL"
+    ],
+    "stage": "FABRICATION",
+    "baselineStartDay": 6,
+    "baselineFinishDay": 8,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "SUB-B06",
+    "name": "SUB · B06",
+    "entityIds": [
+      "B06"
+    ],
+    "objectIds": [
+      "B06/SHELL"
+    ],
+    "stage": "SUB_ASSEMBLY",
+    "baselineStartDay": 8,
+    "baselineFinishDay": 11,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "BA-B06",
+    "name": "BA · B06",
+    "entityIds": [
+      "B06"
+    ],
+    "objectIds": [
+      "B06/SHELL"
+    ],
+    "stage": "BLOCK_ASSEMBLY",
+    "baselineStartDay": 11,
+    "baselineFinishDay": 14,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "ASM-B06",
+    "name": "ASM · B06",
+    "entityIds": [
+      "B06"
+    ],
+    "objectIds": [
+      "B06/SHELL"
+    ],
+    "stage": "GRAND_ASSEMBLY",
+    "baselineStartDay": 14,
+    "baselineFinishDay": 18,
+    "durationDays": 4,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "QG-B06",
+    "name": "QG · B06",
+    "entityIds": [
+      "B06"
+    ],
+    "objectIds": [
+      "B06/SHELL"
+    ],
+    "stage": "INSPECTION",
+    "baselineStartDay": 18,
+    "baselineFinishDay": 20,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "FAB-B07",
+    "name": "FAB · B07",
+    "entityIds": [
+      "B07"
+    ],
+    "objectIds": [
+      "B07/SHELL"
+    ],
+    "stage": "FABRICATION",
+    "baselineStartDay": 6,
+    "baselineFinishDay": 8,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "SUB-B07",
+    "name": "SUB · B07",
+    "entityIds": [
+      "B07"
+    ],
+    "objectIds": [
+      "B07/SHELL"
+    ],
+    "stage": "SUB_ASSEMBLY",
+    "baselineStartDay": 8,
+    "baselineFinishDay": 11,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "BA-B07",
+    "name": "BA · B07",
+    "entityIds": [
+      "B07"
+    ],
+    "objectIds": [
+      "B07/SHELL"
+    ],
+    "stage": "BLOCK_ASSEMBLY",
+    "baselineStartDay": 11,
+    "baselineFinishDay": 14,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "ASM-B07",
+    "name": "ASM · B07",
+    "entityIds": [
+      "B07"
+    ],
+    "objectIds": [
+      "B07/SHELL"
+    ],
+    "stage": "GRAND_ASSEMBLY",
+    "baselineStartDay": 14,
+    "baselineFinishDay": 18,
+    "durationDays": 4,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "QG-B07",
+    "name": "QG · B07",
+    "entityIds": [
+      "B07"
+    ],
+    "objectIds": [
+      "B07/SHELL"
+    ],
+    "stage": "INSPECTION",
+    "baselineStartDay": 18,
+    "baselineFinishDay": 20,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "FAB-B08",
+    "name": "FAB · B08",
+    "entityIds": [
+      "B08"
+    ],
+    "objectIds": [
+      "B08/SHELL"
+    ],
+    "stage": "FABRICATION",
+    "baselineStartDay": 6,
+    "baselineFinishDay": 8,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "SUB-B08",
+    "name": "SUB · B08",
+    "entityIds": [
+      "B08"
+    ],
+    "objectIds": [
+      "B08/SHELL"
+    ],
+    "stage": "SUB_ASSEMBLY",
+    "baselineStartDay": 8,
+    "baselineFinishDay": 11,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "BA-B08",
+    "name": "BA · B08",
+    "entityIds": [
+      "B08"
+    ],
+    "objectIds": [
+      "B08/SHELL"
+    ],
+    "stage": "BLOCK_ASSEMBLY",
+    "baselineStartDay": 11,
+    "baselineFinishDay": 14,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "ASM-B08",
+    "name": "ASM · B08",
+    "entityIds": [
+      "B08"
+    ],
+    "objectIds": [
+      "B08/SHELL"
+    ],
+    "stage": "GRAND_ASSEMBLY",
+    "baselineStartDay": 14,
+    "baselineFinishDay": 18,
+    "durationDays": 4,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "QG-B08",
+    "name": "QG · B08",
+    "entityIds": [
+      "B08"
+    ],
+    "objectIds": [
+      "B08/SHELL"
+    ],
+    "stage": "INSPECTION",
+    "baselineStartDay": 18,
+    "baselineFinishDay": 20,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "FAB-B09",
+    "name": "FAB · B09",
+    "entityIds": [
+      "B09"
+    ],
+    "objectIds": [
+      "B09/SHELL"
+    ],
+    "stage": "FABRICATION",
+    "baselineStartDay": 6,
+    "baselineFinishDay": 8,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "SUB-B09",
+    "name": "SUB · B09",
+    "entityIds": [
+      "B09"
+    ],
+    "objectIds": [
+      "B09/SHELL"
+    ],
+    "stage": "SUB_ASSEMBLY",
+    "baselineStartDay": 8,
+    "baselineFinishDay": 11,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "BA-B09",
+    "name": "BA · B09",
+    "entityIds": [
+      "B09"
+    ],
+    "objectIds": [
+      "B09/SHELL"
+    ],
+    "stage": "BLOCK_ASSEMBLY",
+    "baselineStartDay": 11,
+    "baselineFinishDay": 14,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "ASM-B09",
+    "name": "ASM · B09",
+    "entityIds": [
+      "B09"
+    ],
+    "objectIds": [
+      "B09/SHELL"
+    ],
+    "stage": "GRAND_ASSEMBLY",
+    "baselineStartDay": 14,
+    "baselineFinishDay": 18,
+    "durationDays": 4,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "QG-B09",
+    "name": "QG · B09",
+    "entityIds": [
+      "B09"
+    ],
+    "objectIds": [
+      "B09/SHELL"
+    ],
+    "stage": "INSPECTION",
+    "baselineStartDay": 18,
+    "baselineFinishDay": 20,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "E-B05",
+    "name": "E · B05",
+    "entityIds": [
+      "B05"
+    ],
+    "objectIds": [
+      "B05/SHELL"
+    ],
+    "stage": "ERECTION",
+    "baselineStartDay": 20,
+    "baselineFinishDay": 22,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "E-B04",
+    "name": "E · B04",
+    "entityIds": [
+      "B04"
+    ],
+    "objectIds": [
+      "B04/SHELL"
+    ],
+    "stage": "ERECTION",
+    "baselineStartDay": 22,
+    "baselineFinishDay": 24,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "E-B06",
+    "name": "E · B06",
+    "entityIds": [
+      "B06"
+    ],
+    "objectIds": [
+      "B06/SHELL"
+    ],
+    "stage": "ERECTION",
+    "baselineStartDay": 24,
+    "baselineFinishDay": 26,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "E-B03",
+    "name": "E · B03",
+    "entityIds": [
+      "B03"
+    ],
+    "objectIds": [
+      "B03/SHELL"
+    ],
+    "stage": "ERECTION",
+    "baselineStartDay": 26,
+    "baselineFinishDay": 28,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "E-B07",
+    "name": "E · B07",
+    "entityIds": [
+      "B07"
+    ],
+    "objectIds": [
+      "B07/SHELL"
+    ],
+    "stage": "ERECTION",
+    "baselineStartDay": 28,
+    "baselineFinishDay": 30,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "E-B08",
+    "name": "E · B08",
+    "entityIds": [
+      "B08"
+    ],
+    "objectIds": [
+      "B08/SHELL"
+    ],
+    "stage": "ERECTION",
+    "baselineStartDay": 30,
+    "baselineFinishDay": 32,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "E-B09",
+    "name": "E · B09",
+    "entityIds": [
+      "B09"
+    ],
+    "objectIds": [
+      "B09/SHELL"
+    ],
+    "stage": "ERECTION",
+    "baselineStartDay": 32,
+    "baselineFinishDay": 34,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "E-B02",
+    "name": "E · B02",
+    "entityIds": [
+      "B02"
+    ],
+    "objectIds": [
+      "B02/SHELL"
+    ],
+    "stage": "ERECTION",
+    "baselineStartDay": 34,
+    "baselineFinishDay": 36,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "E-B01",
+    "name": "E · B01",
+    "entityIds": [
+      "B01"
+    ],
+    "objectIds": [
+      "B01/SHELL"
+    ],
+    "stage": "ERECTION",
+    "baselineStartDay": 36,
+    "baselineFinishDay": 38,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "ENG",
+    "name": "ENG",
+    "entityIds": [
+      "LNGC-EDU-01"
+    ],
+    "objectIds": [],
+    "stage": "ENG",
+    "baselineStartDay": 0,
+    "baselineFinishDay": 3,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "MAT",
+    "name": "MAT",
+    "entityIds": [
+      "LNGC-EDU-01"
+    ],
+    "objectIds": [],
+    "stage": "MAT",
+    "baselineStartDay": 3,
+    "baselineFinishDay": 6,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "LONGLEAD",
+    "name": "LONGLEAD",
+    "entityIds": [
+      "LNGC-EDU-01"
+    ],
+    "objectIds": [],
+    "stage": "LONGLEAD",
+    "baselineStartDay": 3,
+    "baselineFinishDay": 18,
+    "durationDays": 15,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "DOCK_READY",
+    "name": "DOCK READY",
+    "entityIds": [
+      "LNGC-EDU-01"
+    ],
+    "objectIds": [],
+    "stage": "DOCK_READY",
+    "baselineStartDay": 6,
+    "baselineFinishDay": 20,
+    "durationDays": 14,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "WC_FND_FAB",
+    "name": "WC FND FAB",
+    "entityIds": [
+      "WC01",
+      "WC02"
+    ],
+    "objectIds": [],
+    "stage": "WC_FND_FAB",
+    "baselineStartDay": 6,
+    "baselineFinishDay": 16,
+    "durationDays": 10,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "WC_FND_QG",
+    "name": "WC FND QG",
+    "entityIds": [
+      "WC01",
+      "WC02"
+    ],
+    "objectIds": [],
+    "stage": "WC_FND_QG",
+    "baselineStartDay": 16,
+    "baselineFinishDay": 18,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "HULL_GATE",
+    "name": "HULL GATE",
+    "entityIds": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07",
+      "B08",
+      "B09"
+    ],
+    "objectIds": [
+      "B01/SHELL",
+      "B02/SHELL",
+      "B03/SHELL",
+      "B04/SHELL",
+      "B05/SHELL",
+      "B06/SHELL",
+      "B07/SHELL",
+      "B08/SHELL",
+      "B09/SHELL"
+    ],
+    "stage": "HULL_GATE",
+    "baselineStartDay": 38,
+    "baselineFinishDay": 40,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "CCS",
+    "name": "CCS",
+    "entityIds": [
+      "LNGC-EDU-01"
+    ],
+    "objectIds": [],
+    "stage": "CCS",
+    "baselineStartDay": 40,
+    "baselineFinishDay": 52,
+    "durationDays": 12,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "WC_FND_INSTALL",
+    "name": "WC FND INSTALL",
+    "entityIds": [
+      "WC01",
+      "WC02"
+    ],
+    "objectIds": [],
+    "stage": "WC_FND_INSTALL",
+    "baselineStartDay": 36,
+    "baselineFinishDay": 38,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "WC_LIFT",
+    "name": "WC LIFT",
+    "entityIds": [
+      "WC01",
+      "WC02"
+    ],
+    "objectIds": [],
+    "stage": "WC_LIFT",
+    "baselineStartDay": 38,
+    "baselineFinishDay": 42,
+    "durationDays": 4,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "WC_DRIVE",
+    "name": "WC DRIVE",
+    "entityIds": [
+      "WC01",
+      "WC02"
+    ],
+    "objectIds": [],
+    "stage": "WC_DRIVE",
+    "baselineStartDay": 42,
+    "baselineFinishDay": 44,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "WC_ELECTRICAL",
+    "name": "WC ELECTRICAL",
+    "entityIds": [
+      "WC01",
+      "WC02"
+    ],
+    "objectIds": [],
+    "stage": "WC_ELECTRICAL",
+    "baselineStartDay": 44,
+    "baselineFinishDay": 46,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "WC_CONTROL",
+    "name": "WC CONTROL",
+    "entityIds": [
+      "WC01",
+      "WC02"
+    ],
+    "objectIds": [],
+    "stage": "WC_CONTROL",
+    "baselineStartDay": 46,
+    "baselineFinishDay": 48,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "WC_TEST",
+    "name": "WC TEST",
+    "entityIds": [
+      "WC01",
+      "WC02"
+    ],
+    "objectIds": [],
+    "stage": "WC_TEST",
+    "baselineStartDay": 48,
+    "baselineFinishDay": 50,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "MACH",
+    "name": "MACH",
+    "entityIds": [
+      "LNGC-EDU-01"
+    ],
+    "objectIds": [],
+    "stage": "MACH",
+    "baselineStartDay": 32,
+    "baselineFinishDay": 42,
+    "durationDays": 10,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "ACC",
+    "name": "ACC",
+    "entityIds": [
+      "LNGC-EDU-01"
+    ],
+    "objectIds": [],
+    "stage": "ACC",
+    "baselineStartDay": 32,
+    "baselineFinishDay": 44,
+    "durationDays": 12,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "OUTFIT",
+    "name": "OUTFIT",
+    "entityIds": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07",
+      "B08",
+      "B09"
+    ],
+    "objectIds": [
+      "B01/SHELL",
+      "B02/SHELL",
+      "B03/SHELL",
+      "B04/SHELL",
+      "B05/SHELL",
+      "B06/SHELL",
+      "B07/SHELL",
+      "B08/SHELL",
+      "B09/SHELL"
+    ],
+    "stage": "OUTFIT",
+    "baselineStartDay": 40,
+    "baselineFinishDay": 50,
+    "durationDays": 10,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "COM",
+    "name": "COM",
+    "entityIds": [
+      "LNGC-EDU-01"
+    ],
+    "objectIds": [],
+    "stage": "COM",
+    "baselineStartDay": 52,
+    "baselineFinishDay": 55,
+    "durationDays": 3,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "HAT",
+    "name": "HAT",
+    "entityIds": [
+      "LNGC-EDU-01"
+    ],
+    "objectIds": [],
+    "stage": "HAT",
+    "baselineStartDay": 55,
+    "baselineFinishDay": 57,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "SAT",
+    "name": "SAT",
+    "entityIds": [
+      "LNGC-EDU-01"
+    ],
+    "objectIds": [],
+    "stage": "SAT",
+    "baselineStartDay": 57,
+    "baselineFinishDay": 59,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "GAS",
+    "name": "GAS",
+    "entityIds": [
+      "LNGC-EDU-01"
+    ],
+    "objectIds": [],
+    "stage": "GAS",
+    "baselineStartDay": 57,
+    "baselineFinishDay": 59,
+    "durationDays": 2,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "taskId": "DEL",
+    "name": "DEL",
+    "entityIds": [
+      "LNGC-EDU-01"
+    ],
+    "objectIds": [],
+    "stage": "DEL",
+    "baselineStartDay": 59,
+    "baselineFinishDay": 60,
+    "durationDays": 1,
+    "calendarId": "CAL-24X7",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  }
+]

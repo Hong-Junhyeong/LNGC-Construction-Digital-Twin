@@ -1,0 +1,22 @@
+import { z } from 'zod';
+import vesselJson from './vessel.json'; import blockJson from './blocks.json'; import objectJson from './physical-objects.json';
+import tanksJson from './cargo-tanks.json'; import wcJson from './wind-challengers.json';
+import productionJson from './production.json'; import tasksJson from './tasks.json'; import dependencyJson from './dependencies.json';
+import materialsJson from './materials.json'; import requirementsJson from './material-requirements.json';
+import qualityJson from './quality.json'; import resourcesJson from './resources.json'; import allocationsJson from './allocations.json';
+import scenariosJson from './scenarios.json'; import kpisJson from './kpis.json';
+import type * as D from '@/types/domain';
+const meta=z.object({sourceType:z.enum(['VERIFIED','DERIVED','ASSUMPTION','MOCK']).nullable(),availability:z.enum(['AVAILABLE','UNKNOWN','NOT_APPLICABLE']),sourceIds:z.array(z.string()),asOf:z.string().nullable()});
+const percent=z.number().min(0).max(100);
+export const blocks=z.array(z.object({entityId:z.string().regex(/^B0[1-9]$/),vesselId:z.string(),name:z.string(),zone:z.string(),objectIds:z.array(z.string()),relatedTankIds:z.array(z.string()),uStart:z.number(),uEnd:z.number(),dataMeta:meta})).parse(blockJson) satisfies D.Block[];
+export const tasks=z.array(z.object({taskId:z.string(),name:z.string(),entityIds:z.array(z.string()),objectIds:z.array(z.string()),stage:z.string(),baselineStartDay:z.number().nonnegative(),baselineFinishDay:z.number().nonnegative(),durationDays:z.number().nonnegative(),calendarId:z.string(),dataMeta:meta})).parse(tasksJson) satisfies D.ScheduleTask[];
+export const production=z.array(z.object({productionRecordId:z.string(),entityId:z.string(),taskId:z.string(),stage:z.enum(['NOT_STARTED','FABRICATION','SUB_ASSEMBLY','BLOCK_ASSEMBLY','GRAND_ASSEMBLY','INSPECTION','STAGING','ERECTION','ERECTED','INTEGRATION','OUTFITTING','COMPLETED']),status:z.enum(['NOT_STARTED','IN_PROGRESS','COMPLETED','HOLD']),progressPct:percent,progressBasis:z.literal('MOCK'),dataDate:z.number(),dataMeta:meta})).parse(productionJson) satisfies D.Production[];
+export const vessel=vesselJson as D.Vessel; export const physicalObjects=objectJson as D.PhysicalObject[];
+export const cargoTanks=tanksJson as D.CargoTank[]; export const windChallengers=wcJson as D.WindChallenger[];
+export const dependencies=dependencyJson as D.Dependency[]; export const materials=materialsJson as D.Material[];
+export const requirements=requirementsJson as D.MaterialRequirement[]; export const quality=qualityJson as D.Quality[];
+export const resources=resourcesJson as D.Resource[]; export const allocations=allocationsJson as D.ResourceAllocation[];
+export const scenarios=scenariosJson as D.SimulationScenario[]; export const kpis=kpisJson as D.KPI[];
+export const blockById=new Map(blocks.map(b=>[b.entityId,b]));
+export function getBlockDetail(id:string){ const block=blockById.get(id); if(!block)return null; return {block,production:production.find(p=>p.entityId===id)!,quality:quality.find(q=>q.objectId===block.objectIds[0])!,material:materials.find(m=>m.materialLotId==='MAT-'+id)!,task:tasks.find(t=>t.taskId==='E-'+id)!}; }
+export const summary={passRate:Number((quality.reduce((s,q)=>s+q.passCount,0)/quality.reduce((s,q)=>s+q.inspectedCount,0)*100).toFixed(1)),openNcr:quality.reduce((s,q)=>s+q.openNcrCount,0),rework:quality.reduce((s,q)=>s+q.reworkManHours,0),materialReadiness:Number((materials.reduce((s,m)=>s+m.quantity,0)/requirements.reduce((s,r)=>s+r.requiredQty,0)*100).toFixed(1)),releasedGates:quality.filter(q=>q.gateStatus==='RELEASED').length};

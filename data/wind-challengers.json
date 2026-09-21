@@ -1,0 +1,78 @@
+[
+  {
+    "entityId": "WC01",
+    "vesselId": "LNGC-EDU-01",
+    "hostBlockId": "B02",
+    "subsystemIds": [
+      "WC01-FND",
+      "WC01-DRV",
+      "WC01-ELE",
+      "WC01-CTL",
+      "WC01-SEN"
+    ],
+    "installationTaskIds": [
+      "WC_FND_INSTALL",
+      "WC_LIFT",
+      "WC_DRIVE",
+      "WC_ELECTRICAL",
+      "WC_CONTROL",
+      "WC_TEST"
+    ],
+    "actuationType": {
+      "value": null,
+      "dataMeta": {
+        "sourceType": null,
+        "availability": "UNKNOWN",
+        "sourceIds": [],
+        "asOf": null
+      }
+    },
+    "hydraulicSystemId": null,
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "entityId": "WC02",
+    "vesselId": "LNGC-EDU-01",
+    "hostBlockId": "B02",
+    "subsystemIds": [
+      "WC02-FND",
+      "WC02-DRV",
+      "WC02-ELE",
+      "WC02-CTL",
+      "WC02-SEN"
+    ],
+    "installationTaskIds": [
+      "WC_FND_INSTALL",
+      "WC_LIFT",
+      "WC_DRIVE",
+      "WC_ELECTRICAL",
+      "WC_CONTROL",
+      "WC_TEST"
+    ],
+    "actuationType": {
+      "value": null,
+      "dataMeta": {
+        "sourceType": null,
+        "availability": "UNKNOWN",
+        "sourceIds": [],
+        "asOf": null
+      }
+    },
+    "hydraulicSystemId": null,
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  }
+]

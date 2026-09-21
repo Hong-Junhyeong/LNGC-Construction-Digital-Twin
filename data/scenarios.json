@@ -1,0 +1,19 @@
+[
+  {
+    "scenarioId": "SCN-B04-WELD-REWORK-3D",
+    "name": "B04 welding rework",
+    "type": "WELDING_REWORK",
+    "baselineId": "BASELINE-P02",
+    "targetEntityId": "B04",
+    "targetTaskId": "E-B04",
+    "status": "DRAFT",
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  }
+]

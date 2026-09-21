@@ -1,0 +1,70 @@
+[
+  {
+    "resourceId": "RES-ERECTION-SLOT-01",
+    "type": "ERECTION_SLOT",
+    "name": "Erection slot",
+    "capacity": 1,
+    "capacityUnit": "slot",
+    "calendarId": "CAL-24X7",
+    "status": "AVAILABLE",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "resourceId": "RES-WC-SLOT-01",
+    "type": "WC_INSTALL_SLOT",
+    "name": "WAPS installation slot",
+    "capacity": 1,
+    "capacityUnit": "slot",
+    "calendarId": "CAL-24X7",
+    "status": "AVAILABLE",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "resourceId": "RES-WELD-01",
+    "type": "WELDING_TEAM",
+    "name": "Repair team",
+    "capacity": 1,
+    "capacityUnit": "team",
+    "calendarId": "CAL-24X7",
+    "status": "AVAILABLE",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "resourceId": "RES-INSP-01",
+    "type": "INSPECTION_TEAM",
+    "name": "Inspection team",
+    "capacity": 1,
+    "capacityUnit": "team",
+    "calendarId": "CAL-24X7",
+    "status": "AVAILABLE",
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  }
+]

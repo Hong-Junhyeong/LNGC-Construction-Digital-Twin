@@ -1,0 +1,193 @@
+[
+  {
+    "entityId": "B01",
+    "vesselId": "LNGC-EDU-01",
+    "name": "Forepeak",
+    "zone": "FORE",
+    "objectIds": [
+      "B01/SHELL"
+    ],
+    "relatedTankIds": [],
+    "uStart": 0,
+    "uEnd": 0.1,
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "entityId": "B02",
+    "vesselId": "LNGC-EDU-01",
+    "name": "Forward deck / WAPS",
+    "zone": "FORE",
+    "objectIds": [
+      "B02/SHELL"
+    ],
+    "relatedTankIds": [],
+    "uStart": 0.1,
+    "uEnd": 0.18,
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "entityId": "B03",
+    "vesselId": "LNGC-EDU-01",
+    "name": "Forward cargo",
+    "zone": "CARGO",
+    "objectIds": [
+      "B03/SHELL"
+    ],
+    "relatedTankIds": [
+      "T01"
+    ],
+    "uStart": 0.18,
+    "uEnd": 0.32,
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "entityId": "B04",
+    "vesselId": "LNGC-EDU-01",
+    "name": "Forward-mid cargo",
+    "zone": "CARGO",
+    "objectIds": [
+      "B04/SHELL"
+    ],
+    "relatedTankIds": [
+      "T02"
+    ],
+    "uStart": 0.32,
+    "uEnd": 0.4,
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "entityId": "B05",
+    "vesselId": "LNGC-EDU-01",
+    "name": "Midship reference",
+    "zone": "CARGO",
+    "objectIds": [
+      "B05/SHELL"
+    ],
+    "relatedTankIds": [
+      "T02",
+      "T03"
+    ],
+    "uStart": 0.4,
+    "uEnd": 0.52,
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "entityId": "B06",
+    "vesselId": "LNGC-EDU-01",
+    "name": "Aft-mid cargo",
+    "zone": "CARGO",
+    "objectIds": [
+      "B06/SHELL"
+    ],
+    "relatedTankIds": [
+      "T03"
+    ],
+    "uStart": 0.52,
+    "uEnd": 0.64,
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "entityId": "B07",
+    "vesselId": "LNGC-EDU-01",
+    "name": "Aft cargo",
+    "zone": "CARGO",
+    "objectIds": [
+      "B07/SHELL"
+    ],
+    "relatedTankIds": [
+      "T04"
+    ],
+    "uStart": 0.64,
+    "uEnd": 0.8,
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "entityId": "B08",
+    "vesselId": "LNGC-EDU-01",
+    "name": "Machinery & accommodation",
+    "zone": "AFT",
+    "objectIds": [
+      "B08/SHELL"
+    ],
+    "relatedTankIds": [],
+    "uStart": 0.8,
+    "uEnd": 0.93,
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "entityId": "B09",
+    "vesselId": "LNGC-EDU-01",
+    "name": "Stern",
+    "zone": "AFT",
+    "objectIds": [
+      "B09/SHELL"
+    ],
+    "relatedTankIds": [],
+    "uStart": 0.93,
+    "uEnd": 1,
+    "dataMeta": {
+      "sourceType": "ASSUMPTION",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "P02"
+      ],
+      "asOf": "2026-09-18"
+    }
+  }
+]

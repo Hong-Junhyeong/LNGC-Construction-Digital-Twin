@@ -1,0 +1,65 @@
+[
+  {
+    "objectId": "B01/SHELL",
+    "entityId": "B01",
+    "parentObjectId": null,
+    "objectType": "BLOCK_COMPONENT",
+    "geometryRef": null
+  },
+  {
+    "objectId": "B02/SHELL",
+    "entityId": "B02",
+    "parentObjectId": null,
+    "objectType": "BLOCK_COMPONENT",
+    "geometryRef": null
+  },
+  {
+    "objectId": "B03/SHELL",
+    "entityId": "B03",
+    "parentObjectId": null,
+    "objectType": "BLOCK_COMPONENT",
+    "geometryRef": null
+  },
+  {
+    "objectId": "B04/SHELL",
+    "entityId": "B04",
+    "parentObjectId": null,
+    "objectType": "BLOCK_COMPONENT",
+    "geometryRef": null
+  },
+  {
+    "objectId": "B05/SHELL",
+    "entityId": "B05",
+    "parentObjectId": null,
+    "objectType": "BLOCK_COMPONENT",
+    "geometryRef": null
+  },
+  {
+    "objectId": "B06/SHELL",
+    "entityId": "B06",
+    "parentObjectId": null,
+    "objectType": "BLOCK_COMPONENT",
+    "geometryRef": null
+  },
+  {
+    "objectId": "B07/SHELL",
+    "entityId": "B07",
+    "parentObjectId": null,
+    "objectType": "BLOCK_COMPONENT",
+    "geometryRef": null
+  },
+  {
+    "objectId": "B08/SHELL",
+    "entityId": "B08",
+    "parentObjectId": null,
+    "objectType": "BLOCK_COMPONENT",
+    "geometryRef": null
+  },
+  {
+    "objectId": "B09/SHELL",
+    "entityId": "B09",
+    "parentObjectId": null,
+    "objectType": "BLOCK_COMPONENT",
+    "geometryRef": null
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "materialLotId": "MAT-B01",
+    "materialCode": "OUTFIT-PACKAGE",
+    "quantity": 100,
+    "unit": "KIT",
+    "status": "RELEASED",
+    "availableDay": 39,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "materialLotId": "MAT-B02",
+    "materialCode": "OUTFIT-PACKAGE",
+    "quantity": 100,
+    "unit": "KIT",
+    "status": "RELEASED",
+    "availableDay": 39,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "materialLotId": "MAT-B03",
+    "materialCode": "OUTFIT-PACKAGE",
+    "quantity": 100,
+    "unit": "KIT",
+    "status": "RELEASED",
+    "availableDay": 39,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "materialLotId": "MAT-B04",
+    "materialCode": "OUTFIT-PACKAGE",
+    "quantity": 100,
+    "unit": "KIT",
+    "status": "RELEASED",
+    "availableDay": 39,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "materialLotId": "MAT-B05",
+    "materialCode": "OUTFIT-PACKAGE",
+    "quantity": 100,
+    "unit": "KIT",
+    "status": "RELEASED",
+    "availableDay": 39,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "materialLotId": "MAT-B06",
+    "materialCode": "OUTFIT-PACKAGE",
+    "quantity": 100,
+    "unit": "KIT",
+    "status": "RELEASED",
+    "availableDay": 39,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "materialLotId": "MAT-B07",
+    "materialCode": "OUTFIT-PACKAGE",
+    "quantity": 80,
+    "unit": "KIT",
+    "status": "PARTIAL",
+    "availableDay": 43,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "materialLotId": "MAT-B08",
+    "materialCode": "OUTFIT-PACKAGE",
+    "quantity": 100,
+    "unit": "KIT",
+    "status": "RELEASED",
+    "availableDay": 39,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "materialLotId": "MAT-B09",
+    "materialCode": "OUTFIT-PACKAGE",
+    "quantity": 100,
+    "unit": "KIT",
+    "status": "RELEASED",
+    "availableDay": 39,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  }
+]

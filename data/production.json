@@ -1,0 +1,164 @@
+[
+  {
+    "productionRecordId": "PROD-B01",
+    "entityId": "B01",
+    "taskId": "E-B01",
+    "stage": "STAGING",
+    "status": "IN_PROGRESS",
+    "progressPct": 65,
+    "progressBasis": "MOCK",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "productionRecordId": "PROD-B02",
+    "entityId": "B02",
+    "taskId": "E-B02",
+    "stage": "STAGING",
+    "status": "IN_PROGRESS",
+    "progressPct": 65,
+    "progressBasis": "MOCK",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "productionRecordId": "PROD-B03",
+    "entityId": "B03",
+    "taskId": "E-B03",
+    "stage": "STAGING",
+    "status": "IN_PROGRESS",
+    "progressPct": 65,
+    "progressBasis": "MOCK",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "productionRecordId": "PROD-B04",
+    "entityId": "B04",
+    "taskId": "E-B04",
+    "stage": "ERECTED",
+    "status": "HOLD",
+    "progressPct": 85,
+    "progressBasis": "MOCK",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "productionRecordId": "PROD-B05",
+    "entityId": "B05",
+    "taskId": "E-B05",
+    "stage": "ERECTED",
+    "status": "IN_PROGRESS",
+    "progressPct": 85,
+    "progressBasis": "MOCK",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "productionRecordId": "PROD-B06",
+    "entityId": "B06",
+    "taskId": "E-B06",
+    "stage": "ERECTION",
+    "status": "IN_PROGRESS",
+    "progressPct": 75,
+    "progressBasis": "MOCK",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "productionRecordId": "PROD-B07",
+    "entityId": "B07",
+    "taskId": "E-B07",
+    "stage": "STAGING",
+    "status": "IN_PROGRESS",
+    "progressPct": 65,
+    "progressBasis": "MOCK",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "productionRecordId": "PROD-B08",
+    "entityId": "B08",
+    "taskId": "E-B08",
+    "stage": "STAGING",
+    "status": "IN_PROGRESS",
+    "progressPct": 65,
+    "progressBasis": "MOCK",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  },
+  {
+    "productionRecordId": "PROD-B09",
+    "entityId": "B09",
+    "taskId": "E-B09",
+    "stage": "STAGING",
+    "status": "IN_PROGRESS",
+    "progressPct": 65,
+    "progressBasis": "MOCK",
+    "dataDate": 25,
+    "dataMeta": {
+      "sourceType": "MOCK",
+      "availability": "AVAILABLE",
+      "sourceIds": [
+        "MOCK-OPS-01"
+      ],
+      "asOf": "2026-09-18"
+    }
+  }
+]
