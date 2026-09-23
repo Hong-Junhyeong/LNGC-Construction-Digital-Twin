@@ -22,6 +22,11 @@ export default function DayContextBar() {
         </span>
       </div>
       <div className="day-context-actions">
+        <label className="playback-step-input">
+          Step
+          <input aria-label="Playback step" type="number" min={0} max={60} step={1}
+            value={playbackStep} onChange={(event) => setPlaybackStep(Number(event.target.value))} />
+        </label>
         {[0, 30, 45, 60].map((step) => (
           <button
             key={step}

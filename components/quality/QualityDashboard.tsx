@@ -21,14 +21,7 @@ import ScenarioContext from "@/components/simulation/ScenarioContext";
 import DayContextBar from "@/components/dashboard/DayContextBar";
 import { useTwin } from "@/application/TwinContext";
 
-const chain = [
-  ["Welding", "Fabrication evidence"],
-  ["NDT", "Inspection result"],
-  ["NCR", "Defect control"],
-  ["Rework", "Corrective work"],
-  ["Reinspection", "Verification"],
-  ["Release", "Next stage"],
-];
+import { getQualityChain, qualityChainLabels } from "@/lib/twin/quality-chain";
 
 export default function QualityDashboard() {
   const {
@@ -63,6 +56,8 @@ export default function QualityDashboard() {
         </div>
       </>
     );
+  const chain = getQualityChain(selected);
+  const completedRework = operationalStates.reduce((sum, block) => sum + block.rework.completedManHours, 0);
   return (
     <>
       <PageHeading
@@ -72,7 +67,7 @@ export default function QualityDashboard() {
       />
       <DayContextBar />
       <ScenarioContext />
-      <div className="kpi-grid">
+      <div className="kpi-grid quality-kpis">
         <KpiCard
           label="Quality gates"
           value={`${operationalSummary.releasedGates} / 9`}
@@ -94,10 +89,10 @@ export default function QualityDashboard() {
         />
         <KpiCard
           label="Planned rework"
-          value={operationalSummary.plannedRework}
+          value={`${completedRework} / ${operationalSummary.plannedRework}`}
           unit="MH"
-          type="MOCK"
-          note="Effort does not imply duration"
+          type="DERIVED"
+          note="Completed / planned effort · not schedule days"
         />
         <KpiCard
           label="Blocks on hold"
@@ -108,25 +103,18 @@ export default function QualityDashboard() {
       </div>
       <Panel
         title="Quality management chain"
-        kicker="BLOCK-LEVEL CONTROL FLOW"
+        kicker={`${selected.blockId} · SHARED PLAYBACK S${playbackStep}`}
         action={<DataSourceBadge type="ASSUMPTION" />}
       >
         <div className="quality-chain operational-chain">
-          {chain.map(([title, detail], index) => (
+          {chain.map(({ title, status, detail }, index) => (
             <div key={title}>
-              <span
-                className={
-                  "chain-node " +
-                  (selected.qualityGate !== "RELEASED" &&
-                  (title === "NCR" || title === "Release")
-                    ? "hold"
-                    : "")
-                }
-              >
+              <span className="chain-node" data-state={status}>
                 <small>{title}</small>
-                <strong>{detail}</strong>
+                <strong>{qualityChainLabels[status]}</strong>
+                <span className="chain-detail">{detail}</span>
               </span>
-              {index < chain.length - 1 && <ChevronRight size={18} />}
+              {index < chain.length - 1 && <ChevronRight size={18} aria-hidden="true" />}
             </div>
           ))}
         </div>
@@ -247,8 +235,8 @@ export default function QualityDashboard() {
           </div>
           <div>
             <span>REWORK</span>
-            <strong>{selected.rework.plannedManHours} MH</strong>
-            <small>{selected.rework.completedManHours} completed</small>
+            <strong>{selected.rework.completedManHours} / {selected.rework.plannedManHours} MH</strong>
+            <small>Completed / planned</small>
           </div>
           <div>
             <span>RELEASE</span>

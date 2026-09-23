@@ -25,6 +25,7 @@ import MasterGantt from "./MasterGantt";
 import { resources, allocations } from "@/data/repository";
 import { masterProjectFinish, masterTasks } from "@/data/master-schedule";
 import { useTwin } from "@/application/TwinContext";
+import { getPlaybackResourceSnapshot } from "@/lib/twin/resource-state";
 
 export default function ProductionDashboard() {
   const {
@@ -34,6 +35,7 @@ export default function ProductionDashboard() {
     operationalSummary,
     playbackStep,
     blockProgress,
+    outfittingState,
   } = useTwin();
   const [search, setSearch] = useState("");
   const shown = operationalStates.filter((block) =>
@@ -44,6 +46,21 @@ export default function ProductionDashboard() {
   const selected = operationalStates.find(
     (block) => block.blockId === selectedBlock,
   );
+  const resourceSnapshot = getPlaybackResourceSnapshot(
+    playbackStep,
+    resources,
+    operationalStates,
+  );
+  const resourceStateById = new Map(
+    resourceSnapshot.states.map((state) => [state.resourceId, state]),
+  );
+  const materialContext = playbackStep < 25
+    ? "Mock kits are being progressively staged toward each block's recorded lot ceiling."
+    : playbackStep < 39
+      ? "Base mock lots are staged; B07 remains partial while its final quantity is pending."
+      : playbackStep < 43
+        ? "Standard block lots are ready; B07 remains partial until its assumed availability step."
+        : "All mock block kits have reached their assumed available quantity.";
   return (
     <>
       <PageHeading
@@ -73,7 +90,7 @@ export default function ProductionDashboard() {
           value={operationalSummary.materialReadiness}
           unit="%"
           type="MOCK"
-          note="Available / required mock kits"
+          note={`Available / required mock kits at S${playbackStep}`}
         />
         <KpiCard
           label="Master tasks"
@@ -282,7 +299,7 @@ export default function ProductionDashboard() {
           )}
         </TabsContent>
         <TabsContent value="materials">
-          <Panel title="Material readiness" kicker="REQUIREMENT → LOT → BLOCK">
+          <Panel title="Material readiness" kicker={`PLAYBACK S${playbackStep} · REQUIREMENT → STAGED LOT → BLOCK`}>
             <Table>
               <TableHeader>
                 <TableRow>
@@ -344,36 +361,44 @@ export default function ProductionDashboard() {
             </Table>
           </Panel>
           <Note>
-            Material values are educational mock inventory. B07 remains partial
-            until its assumed availability day; no schedule propagation is
-            performed.
+            {materialContext} Values are educational mock inventory and do not
+            propagate into the Master Schedule.
           </Note>
         </TabsContent>
         <TabsContent value="resources">
+          <div className="resource-step-summary" aria-label={`Resource demand at playback step ${playbackStep}`}>
+            <div><span>PLAYBACK STEP</span><strong>S{playbackStep}</strong></div>
+            <div><span>ACTIVE WORK FRONTS</span><strong>{resourceSnapshot.summary.activeWorkFronts}</strong></div>
+            <div><span>ACTIVE RESOURCE GROUPS</span><strong>{resourceSnapshot.summary.activeCrews} / {resources.length}</strong></div>
+            <div><span>PARALLEL DEMAND</span><strong>{resourceSnapshot.summary.demandPct}%</strong></div>
+            <div><span>OUTFITTING DEMAND</span><strong>{outfittingState.stage.replaceAll("_", " ")}</strong></div>
+          </div>
           <div className="resource-grid">
-            {resources.map((resource) => (
-              <Panel
-                title={resource.name}
-                key={resource.resourceId}
-                kicker={resource.type}
-              >
-                <div className="resource-capacity">
-                  {resource.capacity}
-                  <span>{resource.capacityUnit}</span>
-                </div>
-                <StatusBadge status={resource.status} />
-                <p className="muted">
-                  {
-                    allocations.filter(
-                      (item) => item.resourceId === resource.resourceId,
-                    ).length
-                  }{" "}
-                  legacy fixture allocations · Master model maps erection and
-                  WAPS slots separately
-                </p>
-                <DataSourceBadge type="ASSUMPTION" />
-              </Panel>
-            ))}
+            {resources.map((resource) => {
+              const current = resourceStateById.get(resource.resourceId)!;
+              const allocationCount = allocations.filter(
+                (item) => item.resourceId === resource.resourceId,
+              ).length;
+              return (
+                <Panel
+                  title={resource.name}
+                  key={resource.resourceId}
+                  kicker={`${resource.type} · PLAYBACK S${playbackStep}`}
+                >
+                  <div className="resource-capacity">
+                    {current.activityLabel}
+                    <span>{current.demandPct}% demand</span>
+                  </div>
+                  <Meter value={current.demandPct} label={`${resource.name} demand at playback step ${playbackStep}`} />
+                  <StatusBadge status={current.status} />
+                  <p className="muted">{current.detail}</p>
+                  <p className="resource-allocation-note">
+                    {resource.capacity} {resource.capacityUnit} capacity · {allocationCount} baseline allocation{allocationCount === 1 ? "" : "s"}
+                  </p>
+                  <DataSourceBadge type="ASSUMPTION" />
+                </Panel>
+              );
+            })}
           </div>
         </TabsContent>
       </Tabs>

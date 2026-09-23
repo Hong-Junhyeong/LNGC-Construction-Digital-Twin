@@ -19,7 +19,9 @@
     "test:timeline": "node tests/validate-timeline.mjs",
     "test:p14": "node tests/validate-p14-systems.mjs",
     "dev:next": "next dev",
-    "test:static": "node tests/smoke-static.mjs"
+    "test:static": "node tests/smoke-static.mjs",
+    "test:p15": "node tests/validate-p15-playback.mjs",
+    "test:p18": "node tests/validate-p18-production.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

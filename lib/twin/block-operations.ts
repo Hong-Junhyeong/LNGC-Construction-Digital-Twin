@@ -45,7 +45,12 @@ export function getOperationalSnapshot(day:number,construction:BlockState[],data
     if(!plan||!recorded||!quality||!requirement||!material){issues.push(`${block.entityId}: operational data unavailable (incomplete record).`);return [];}
 
     const isB04=block.entityId==='B04';
-    const availableQty=day>=(material.availableDay??Infinity)?requirement.requiredQty:material.quantity;
+    // The fixture quantity is the lot ceiling. Playback shows how much of that lot
+    // has been staged for the block, reaching the recorded ceiling before need-by.
+    const fixtureQty=Math.min(requirement.requiredQty,material.quantity);
+    const stagingCompleteDay=Math.max(1,Math.round(requirement.needByDay*.625));
+    const stagedQty=Math.round(fixtureQty*clamp(day/stagingCompleteDay,0,1));
+    const availableQty=day>=(material.availableDay??Infinity)?requirement.requiredQty:stagedQty;
     const readinessPct=round1(clamp(availableQty/Math.max(1,requirement.requiredQty)*100,0,100));
     const materialStatus=readinessPct>=100?'READY':day>requirement.needByDay?'DELAYED':'PARTIAL';
     const weldTarget=isB04&&day>=29?100:quality.weldingProgressPct;

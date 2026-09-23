@@ -115,7 +115,7 @@ function Shell({ children }: { children: React.ReactNode }) {
                 <h3>Reference hierarchy</h3>
                 <p>
                   Modeling: P02 → Data: P03 → UI: P04 → Process refinement: P13
-                  → Systems extension: P14.
+                  → Systems extension: P14 → playback synchronization: P15.
                 </p>
                 <p>
                   Block IDs B01–B09 are project Simulation Blocks, not an
@@ -139,10 +139,10 @@ function Shell({ children }: { children: React.ReactNode }) {
                 )}
                 <h3>Current implementation</h3>
                 <p>
-                  P13 keeps a separate calendar-based Master Schedule for CPM.
-                  P14 adds Cargo Hold, insulation, membrane, inspection and
-                  lightweight outfitting states to the same normalized 0–60 3D
-                  playback. These visual states do not change project dates.
+                  The calendar-based Master Schedule remains separate from the
+                  normalized 0–60 construction playback. Cargo containment,
+                  outfitting and the B04 quality chain resolve from the shared
+                  playback step without changing project dates.
                 </p>
                 <p>
                   This project uses publicly available vessel information and
@@ -160,7 +160,7 @@ function Shell({ children }: { children: React.ReactNode }) {
             </SheetContent>
           </Sheet>
           <div className="prototype-label">
-            PROTOTYPE <span>BUILD 14</span>
+            PROTOTYPE <span>BUILD 18</span>
           </div>
         </SidebarFooter>
       </Sidebar>
@@ -192,7 +192,7 @@ function Shell({ children }: { children: React.ReactNode }) {
         </div>
         <footer className="app-footer">
           <span>SIMULATED PRODUCTION DATA · NOT CONNECTED TO YARD SYSTEMS</span>
-          <span>LNGC-EDU-01 / P14</span>
+          <span>LNGC-EDU-01 / P18</span>
         </footer>
       </SidebarInset>
     </SidebarProvider>
