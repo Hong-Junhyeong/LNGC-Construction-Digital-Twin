@@ -456,7 +456,7 @@ h1{font-weight:650;letter-spacing:-1.25px}h2{font-weight:650;color:var(--industr
   .overview-playback .day-context{min-height:112px;flex-direction:row;align-items:center;justify-content:space-between}
   .twin-priority-section{grid-template-columns:1fr}.priority-panel{border-left:0;border-top:1px solid var(--industrial-border);padding:22px 0 0}
 }
-@media(max-width:1050px){
+@media(max-width:1250px){
   .overview-hero{
     display:block;
     height:310px;
