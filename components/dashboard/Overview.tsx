@@ -33,8 +33,8 @@ export default function Overview() {
         </figure>
         <div className="hero-copy">
           <p className="eyebrow">PRODUCTION CONTROL / 01</p>
-          <h1 id="overview-title">LNGC Production Twin</h1>
-          <p className="hero-statement">From vessel geometry to production decisions.</p>
+          <h1 id="overview-title">LNGC Production Digital Twin</h1>
+          <p className="hero-statement">From construction data to production decisions.</p>
           <p className="hero-metadata">174K membrane LNG carrier · 9 simulation blocks · 2 Wind Challenger systems</p>
           <div className="hero-state" aria-label="Current vessel state">
             <span>S{playbackStep}</span><i aria-hidden="true" /><span>{currentState}</span><i aria-hidden="true" /><span>{summary.releasedGates} / 9 GATES</span>
