@@ -17,6 +17,12 @@ export default function ScenarioContext() {
           3D playback S{playbackStep} · Master Schedule delivery D
           {result.scenarioFinishDay} (+{result.incrementalDelayDays}d)
         </p>
+        {result.scenario?.type === "WELDING_REWORK" && result.triggerPlaybackStep !== undefined && (
+          <p className="scenario-quality-context">
+            Quality overlay: {result.scenario.targetEntityId} · active from S
+            {result.triggerPlaybackStep} until scenario reset
+          </p>
+        )}
       </div>
       <div className="scenario-impact-links">
         {result.blockImpacts.map((b) => (

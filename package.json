@@ -21,7 +21,8 @@
     "dev:next": "next dev",
     "test:static": "node tests/smoke-static.mjs",
     "test:p15": "node tests/validate-p15-playback.mjs",
-    "test:p18": "node tests/validate-p18-production.mjs"
+    "test:p18": "node tests/validate-p18-production.mjs",
+    "test:p19": "node tests/validate-p19-quality-overlay.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

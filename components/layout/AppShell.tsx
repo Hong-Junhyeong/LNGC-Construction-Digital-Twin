@@ -160,7 +160,7 @@ function Shell({ children }: { children: React.ReactNode }) {
             </SheetContent>
           </Sheet>
           <div className="prototype-label">
-            PROTOTYPE <span>BUILD 18</span>
+            PROTOTYPE <span>BUILD 19</span>
           </div>
         </SidebarFooter>
       </Sidebar>
@@ -192,7 +192,7 @@ function Shell({ children }: { children: React.ReactNode }) {
         </div>
         <footer className="app-footer">
           <span>SIMULATED PRODUCTION DATA · NOT CONNECTED TO YARD SYSTEMS</span>
-          <span>LNGC-EDU-01 / P18</span>
+          <span>LNGC-EDU-01 / P19</span>
         </footer>
       </SidebarInset>
     </SidebarProvider>

@@ -294,6 +294,8 @@ export interface BlockImpact {
 }
 export interface WhatIfResult extends SimulationResult {
   scenario: WhatIfScenario | null;
+  /** Normalized 3D playback step captured by the UI when this run started. */
+  triggerPlaybackStep?: number;
   baseline: ScheduleSnapshot;
   scenarioSchedule: ScheduleSnapshot;
   taskImpacts: TaskImpact[];

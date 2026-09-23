@@ -394,6 +394,12 @@ h1{font-weight:650;letter-spacing:-1.25px}h2{font-weight:650;color:var(--industr
 @media(max-width:1050px){.resource-step-summary{grid-template-columns:repeat(3,minmax(0,1fr))}.resource-step-summary>div:nth-child(3){border-right:0}.resource-step-summary>div:nth-child(-n+3){border-bottom:1px solid var(--industrial-border)}}
 @media(max-width:650px){.resource-step-summary{grid-template-columns:1fr 1fr}.resource-step-summary>div{border-bottom:1px solid var(--industrial-border)}.resource-step-summary>div:nth-child(odd){border-right:1px solid var(--industrial-border)}.resource-step-summary>div:nth-child(even){border-right:0}.resource-step-summary>div:last-child{grid-column:1/-1;border-bottom:0}.resource-grid .resource-capacity{font-size:25px}}
 
+/* P19 — explicit quality scenario overlay without mutating baseline mock records. */
+.scenario-quality-context{margin-top:4px!important;font:600 11px/1.5 Consolas,monospace;color:var(--status-delay)}
+tr[data-scenario=true]{background:var(--status-delay-bg)}
+tr[data-scenario=true] td:first-child{box-shadow:inset 3px 0 0 var(--status-delay)}
+tr[data-scenario=true] .source{display:inline-block;margin-top:6px}
+
 /* P17 — reference-led Overview composition and first-viewport density. */
 :root{
   --industrial-page:#f4f7f9;

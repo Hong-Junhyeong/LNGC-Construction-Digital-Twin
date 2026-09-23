@@ -144,10 +144,11 @@ export default function SimulationWorkspace() {
       Number(duration),
       Number(start),
     );
+    const triggerPlaybackStep = playbackStep;
     timer.current = setTimeout(() => {
       try {
         const result = simulateScenario(simulationInput, scenario);
-        setSimulationResult(result);
+        setSimulationResult({ ...result, triggerPlaybackStep });
         selectScenario(scenario.scenarioId);
         setStatus("SIMULATION COMPLETE");
       } catch (e) {

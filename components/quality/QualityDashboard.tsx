@@ -22,6 +22,7 @@ import DayContextBar from "@/components/dashboard/DayContextBar";
 import { useTwin } from "@/application/TwinContext";
 
 import { getQualityChain, qualityChainLabels } from "@/lib/twin/quality-chain";
+import { getScenarioQualityView } from "@/lib/twin/scenario-quality-overlay";
 
 export default function QualityDashboard() {
   const {
@@ -31,8 +32,15 @@ export default function QualityDashboard() {
     operationalStates,
     operationalSummary,
     playbackStep,
+    simulationResult,
   } = useTwin();
-  const selected = operationalStates.find(
+  const qualityView = getScenarioQualityView(
+    simulationResult,
+    playbackStep,
+    operationalStates,
+    operationalSummary,
+  );
+  const selected = qualityView.states.find(
     (block) => block.blockId === selectedBlock,
   );
   if (!selected)
@@ -48,7 +56,7 @@ export default function QualityDashboard() {
           Select a block with available quality data.
         </p>
         <div className="scenario-presets">
-          {operationalStates.map((b) => (
+          {qualityView.states.map((b) => (
             <button key={b.blockId} onClick={() => selectBlock(b.blockId)}>
               {b.blockId}
             </button>
@@ -56,7 +64,10 @@ export default function QualityDashboard() {
         </div>
       </>
     );
-  const chain = getQualityChain(selected);
+  const selectedOverlay = qualityView.overlay?.blockId === selected.blockId
+    ? qualityView.overlay
+    : null;
+  const chain = getQualityChain(selected, selectedOverlay);
   const completedRework = operationalStates.reduce((sum, block) => sum + block.rework.completedManHours, 0);
   return (
     <>
@@ -70,41 +81,41 @@ export default function QualityDashboard() {
       <div className="kpi-grid quality-kpis">
         <KpiCard
           label="Quality gates"
-          value={`${operationalSummary.releasedGates} / 9`}
+          value={`${qualityView.summary.releasedGates} / 9`}
           type="DERIVED"
           note={`3D playback step ${playbackStep}`}
         />
         <KpiCard
           label="NDT pass rate"
-          value={operationalSummary.ndtPassRate ?? "—"}
-          unit={operationalSummary.ndtPassRate === null ? "" : "%"}
+          value={qualityView.summary.ndtPassRate ?? "—"}
+          unit={qualityView.summary.ndtPassRate === null ? "" : "%"}
           type="DERIVED"
-          note="Mock inspections in current preview"
+          note={qualityView.overlay ? "Baseline percentage retained · scenario issue active" : "Mock inspections in current preview"}
         />
         <KpiCard
           label="Open NCR"
-          value={operationalSummary.openNcr}
+          value={qualityView.summary.openNcr}
           type="DERIVED"
-          note="Current timeline overlay"
+          note={qualityView.overlay ? `${qualityView.overlay.blockId} includes 1 scenario NCR` : "Current timeline overlay"}
         />
         <KpiCard
           label="Planned rework"
-          value={`${completedRework} / ${operationalSummary.plannedRework}`}
+          value={`${completedRework} / ${qualityView.summary.plannedRework}`}
           unit="MH"
           type="DERIVED"
-          note="Completed / planned effort · not schedule days"
+          note={qualityView.overlay ? `${qualityView.overlay.blockId} scenario rework required · +${qualityView.overlay.delayDays}d schedule allowance` : "Completed / planned effort · not schedule days"}
         />
         <KpiCard
           label="Blocks on hold"
-          value={operationalSummary.blocksOnHold}
+          value={qualityView.summary.blocksOnHold}
           type="DERIVED"
           note="Blocked or in rework"
         />
       </div>
       <Panel
         title="Quality management chain"
-        kicker={`${selected.blockId} · SHARED PLAYBACK S${playbackStep}`}
-        action={<DataSourceBadge type="ASSUMPTION" />}
+        kicker={selectedOverlay ? `${selected.blockId} · SCENARIO QUALITY OVERLAY · TRIGGER S${selectedOverlay.triggerPlaybackStep}` : `${selected.blockId} · BASELINE MOCK · SHARED PLAYBACK S${playbackStep}`}
+        action={<DataSourceBadge type={selectedOverlay ? "ASSUMPTION" : "MOCK"} />}
       >
         <div className="quality-chain operational-chain">
           {chain.map(({ title, status, detail }, index) => (
@@ -122,13 +133,12 @@ export default function QualityDashboard() {
           <ShieldAlert size={22} />
           <div>
             <strong>
-              {selected.blockId} · {selected.qualityGate}
+              {selected.blockId} · {selectedOverlay ? "SCENARIO HOLD" : selected.qualityGate}
             </strong>
             <p>
-              {selected.ndt.status} · NCR {selected.ncr.openCount} open ·{" "}
-              {selected.rework.completedManHours}/
-              {selected.rework.plannedManHours} MH rework · enter an explicit
-              repair allowance in Simulation to calculate delivery impact.
+              {selectedOverlay
+                ? `Scenario NCR open · rework required · reinspection pending · +${selectedOverlay.delayDays}d Master Schedule allowance; no MH or playback-step conversion.`
+                : `${selected.ndt.status} · NCR ${selected.ncr.openCount} open · ${selected.rework.completedManHours}/${selected.rework.plannedManHours} MH rework · enter an explicit repair allowance in Simulation to calculate delivery impact.`}
             </p>
           </div>
           <Link
@@ -165,10 +175,15 @@ export default function QualityDashboard() {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {operationalStates.map((block) => (
+            {qualityView.states.map((block) => {
+              const blockOverlay = qualityView.overlay?.blockId === block.blockId
+                ? qualityView.overlay
+                : null;
+              return (
               <TableRow
                 key={block.blockId}
                 data-selected={block.blockId === selected.blockId}
+                data-scenario={Boolean(blockOverlay)}
               >
                 <TableCell>
                   <button
@@ -178,6 +193,7 @@ export default function QualityDashboard() {
                     {block.blockId}
                   </button>
                   <small className="cell-sub">{block.name}</small>
+                  {blockOverlay && <DataSourceBadge type="ASSUMPTION" />}
                 </TableCell>
                 <TableCell>
                   {block.welding.progressPct}%
@@ -197,6 +213,7 @@ export default function QualityDashboard() {
                 <TableCell>
                   {block.rework.completedManHours} /{" "}
                   {block.rework.plannedManHours} MH
+                  {blockOverlay && <small className="cell-sub">Scenario required · +{blockOverlay.delayDays}d</small>}
                 </TableCell>
                 <TableCell>
                   <StatusBadge status={block.qualityGate} />
@@ -205,7 +222,8 @@ export default function QualityDashboard() {
                   <StatusBadge status={block.status} />
                 </TableCell>
               </TableRow>
-            ))}
+              );
+            })}
           </TableBody>
         </Table>
       </Panel>
@@ -213,7 +231,7 @@ export default function QualityDashboard() {
         title={`${selected.blockId} · release detail`}
         kicker="SAME BLOCK ID ACROSS ALL VIEWS"
         className="section-gap"
-        action={<DataSourceBadge type="MOCK" />}
+        action={<DataSourceBadge type={selectedOverlay ? "ASSUMPTION" : "MOCK"} />}
       >
         <div className="selected-strip quality-strip">
           <div>
@@ -231,17 +249,17 @@ export default function QualityDashboard() {
           <div>
             <span>NCR</span>
             <strong>{selected.ncr.totalCount}</strong>
-            <small>{selected.ncr.openCount} open</small>
+            <small>{selected.ncr.openCount} open{selectedOverlay ? " · includes scenario" : ""}</small>
           </div>
           <div>
             <span>REWORK</span>
-            <strong>{selected.rework.completedManHours} / {selected.rework.plannedManHours} MH</strong>
-            <small>Completed / planned</small>
+            <strong>{selectedOverlay ? "SCENARIO ACTIVE" : `${selected.rework.completedManHours} / ${selected.rework.plannedManHours} MH`}</strong>
+            <small>{selectedOverlay ? `Required · +${selectedOverlay.delayDays}d schedule allowance` : "Completed / planned"}</small>
           </div>
           <div>
             <span>RELEASE</span>
-            <strong>{selected.qualityGate}</strong>
-            <small>Stage {selected.stage.replaceAll("_", " ")}</small>
+            <strong>{selectedOverlay ? "SCENARIO HOLD" : selected.qualityGate}</strong>
+            <small>{selectedOverlay ? "Blocked pending reinspection" : `Stage ${selected.stage.replaceAll("_", " ")}`}</small>
           </div>
         </div>
       </Panel>
