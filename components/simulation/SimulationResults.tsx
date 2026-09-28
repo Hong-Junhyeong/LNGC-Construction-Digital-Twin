@@ -182,7 +182,7 @@ export default function SimulationResults({
                 "Baseline start / finish",
                 "Scenario start / finish",
                 "Finish shift",
-                "Float before → after",
+                "Baseline delivery margin before → after",
               ].map((h) => (
                 <TableHead key={h}>{h}</TableHead>
               ))}
@@ -205,17 +205,18 @@ export default function SimulationResults({
                   D{t.scenarioStart} / D{t.scenarioFinish}
                 </TableCell>
                 <TableCell>+{t.finishDelta}d</TableCell>
-                <TableCell>
-                  {
-                    r.baseline.tasks.find((b) => b.taskId === t.taskId)
-                      ?.totalFloat
-                  }{" "}
-                  → {byId.get(t.taskId)?.totalFloat}d
+                <TableCell className={t.baselineDeliveryMarginAfter < 0 ? "baseline-margin-negative" : undefined}>
+                  {t.baselineDeliveryMarginBefore} → {t.baselineDeliveryMarginAfter}d
                 </TableCell>
               </TableRow>
             ))}
           </TableBody>
         </Table>
+        <p className="simulation-explanation">
+          Scenario margin is measured against the original baseline delivery D{r.baselineFinishDay},
+          not the delayed scenario finish. Negative margin means the original target is exceeded;
+          standard scenario CPM float and critical paths remain relative to D{r.scenarioFinishDay}.
+        </p>
         {!r.taskImpacts.length && (
           <p className="empty-state">
             No task timing changes. The incident has no delivery impact.

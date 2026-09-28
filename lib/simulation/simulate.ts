@@ -1,5 +1,5 @@
 import type {Dependency,MaterialRequirement,ResourceAllocation,ScheduleTask,WhatIfScenario,WhatIfResult} from '../../types/domain';
-import {calculateSchedule,type ScheduleChanges} from './cpm.ts';
+import {calculateMarginsToFixedFinish,calculateSchedule,type ScheduleChanges} from './cpm.ts';
 import {EPS} from './graph.ts';
 export interface SimulationInput {tasks:ScheduleTask[];dependencies:Dependency[];requirements:MaterialRequirement[];allocations:ResourceAllocation[];}
 /** A new snapshot per call. Neither baseline fixtures nor the submitted scenario are mutated. */
@@ -25,8 +25,9 @@ export function simulateScenario(input:SimulationInput,scenario:WhatIfScenario|n
  }
  const scenarioSchedule=calculateSchedule(input.tasks,input.dependencies,scenario?scenario.scenarioId:'NO-SCENARIO',changes);
  const before=new Map(baseline.tasks.map(t=>[t.taskId,t]));
+ const baselineDeliveryMargins=calculateMarginsToFixedFinish(input.tasks,input.dependencies,scenarioSchedule,baseline.finishDay,changes);
  if(changes.outage){const ids=changes.outage.taskIds;directTaskIds=scenarioSchedule.tasks.filter(t=>{const b=before.get(t.taskId)!;const readiness=Math.max(0,...input.dependencies.filter(d=>d.successorTaskId===t.taskId).map(d=>scenarioSchedule.tasks.find(s=>s.taskId===d.predecessorTaskId)!.ef+d.lagDays));return ids.includes(t.taskId)&&(t.ef-t.es>b.durationDays+EPS||t.es>readiness+EPS);}).map(t=>t.taskId);}
- const taskImpacts=scenarioSchedule.tasks.filter(t=>{const b=before.get(t.taskId)!;return Math.abs(t.es-b.es)>EPS||Math.abs(t.ef-b.ef)>EPS;}).map(t=>{const b=before.get(t.taskId)!;return {taskId:t.taskId,baselineStart:b.es,scenarioStart:t.es,baselineFinish:b.ef,scenarioFinish:t.ef,finishDelta:Math.round((t.ef-b.ef)*1e8)/1e8,direct:directTaskIds.includes(t.taskId)};});
+ const taskImpacts=scenarioSchedule.tasks.filter(t=>{const b=before.get(t.taskId)!;return Math.abs(t.es-b.es)>EPS||Math.abs(t.ef-b.ef)>EPS;}).map(t=>{const b=before.get(t.taskId)!;return {taskId:t.taskId,baselineStart:b.es,scenarioStart:t.es,baselineFinish:b.ef,scenarioFinish:t.ef,finishDelta:Math.round((t.ef-b.ef)*1e8)/1e8,direct:directTaskIds.includes(t.taskId),baselineDeliveryMarginBefore:b.totalFloat,baselineDeliveryMarginAfter:baselineDeliveryMargins.get(t.taskId)!};});
  const floatChanges=scenarioSchedule.tasks.filter(t=>Math.abs(t.totalFloat-before.get(t.taskId)!.totalFloat)>EPS||directTaskIds.includes(t.taskId)).map(t=>{const b=before.get(t.taskId)!;return {taskId:t.taskId,baselineFloat:b.totalFloat,scenarioFloat:t.totalFloat,consumedDays:Math.max(0,b.totalFloat-t.totalFloat)};});
  const affectedEntityIds=[...new Set(taskImpacts.flatMap(t=>before.get(t.taskId)!.entityIds))];
  const blockImpacts=affectedEntityIds.filter(id=>/^B0[1-9]$/.test(id)).sort().map(blockId=>{const list=taskImpacts.filter(t=>before.get(t.taskId)!.entityIds.includes(blockId));return {blockId,taskIds:list.map(t=>t.taskId),maxFinishDelta:Math.max(...list.map(t=>t.finishDelta)),direct:scenario?.targetEntityId===blockId&&list.some(t=>t.direct)};});

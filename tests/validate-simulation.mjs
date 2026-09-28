@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {calculateSchedule} from '../lib/simulation/cpm.ts';
+import {calculateMarginsToFixedFinish,calculateSchedule} from '../lib/simulation/cpm.ts';
 import {simulateScenario} from '../lib/simulation/simulate.ts';
 import {createScenario,SCENARIO_PRESETS} from '../lib/simulation/scenarios.ts';
 import {masterTasks,masterDependencies,masterRequirements,masterAllocations,masterProjectFinish} from '../data/master-schedule.ts';
@@ -27,6 +27,12 @@ assert.equal(calculateSchedule(small,edges,'small').tasks.find(t=>t.taskId==='B'
 assert.equal(calculateSchedule(small,edges,'inside',{durationAdds:{B:2}}).finishDay,6);
 assert.equal(calculateSchedule(small,edges,'exceeds',{durationAdds:{B:3}}).finishDay,7);
 assert.equal(calculateSchedule(small,edges,'critical',{durationAdds:{A:1}}).finishDay,7);
+const lateBranch=calculateSchedule(small,edges,'late-branch',{durationAdds:{B:3}});
+const fixedMargins=calculateMarginsToFixedFinish(small,edges,lateBranch,6,{durationAdds:{B:3}});
+assert.equal(fixedMargins.get('A'),0); // Other branch kept the baseline delivery target.
+assert.equal(fixedMargins.get('B'),-1); // B used its 2d allowance and exceeded it by 1d.
+assert.equal(fixedMargins.get('DEL'),-1);
+assert.equal(lateBranch.tasks.find(t=>t.taskId==='B').totalFloat,0); // Standard CPM remains relative to D7.
 // Resource interruption, boundary half-open, and backward pass across an outage.
 const outage=calculateSchedule(small,edges,'outage',{outage:{start:1,end:3,taskIds:['B']}});
 assert.equal(outage.finishDay,6);assert.equal(outage.tasks.find(t=>t.taskId==='B').ef,5);assert.equal(outage.tasks.find(t=>t.taskId==='B').totalFloat,0);
@@ -52,3 +58,14 @@ assert.equal(acceptance.taskImpacts.length,21);assert.equal(acceptance.targetFlo
 assert.equal(acceptance.scenarioSchedule.tasks.find(t=>t.taskId==='E-B04').ef,678.5);
 assert.equal(simulateScenario(input,null).scenarioFinishDay,1070);
 console.log('P13 PASS: B04 +3.5d → D1073.5, 21 affected tasks; reset recomputes D1070 Master Schedule.');
+
+const b03=simulateScenario(input,createScenario('WELDING_REWORK','B03',5));
+const impact=id=>b03.taskImpacts.find(t=>t.taskId===id);
+assert.equal(b03.baselineFinishDay,1070);assert.equal(b03.scenarioFinishDay,1075);
+assert.deepEqual([impact('E-B03').baselineStart,impact('E-B03').baselineFinish,impact('E-B03').scenarioStart,impact('E-B03').scenarioFinish],[685,695,685,700]);
+assert.deepEqual([impact('E-B03').baselineDeliveryMarginBefore,impact('E-B03').baselineDeliveryMarginAfter],[0,-5]);
+assert.deepEqual([impact('E-B08').baselineDeliveryMarginBefore,impact('E-B08').baselineDeliveryMarginAfter],[20,15]);
+assert.deepEqual([impact('OUTFIT').baselineDeliveryMarginBefore,impact('OUTFIT').baselineDeliveryMarginAfter],[30,25]);
+assert.equal(b03.scenarioSchedule.tasks.find(t=>t.taskId==='E-B03').totalFloat,0);
+assert.equal(b03.taskImpacts.some(t=>t.finishDelta!==5),false);
+console.log('P20.1 PASS: B03 +5d → D1075, E-B03 baseline margin 0→-5d, E-B08 20→15d, OUTFIT 30→25d; scenario CPM float remains 0d.');

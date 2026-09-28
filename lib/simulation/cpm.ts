@@ -23,3 +23,26 @@ export function calculateSchedule(tasks:ScheduleTask[],dependencies:Dependency[]
  for(const id of graph.order)if(result.get(id)!.isCritical&&!graph.incoming.get(id)!.some(e=>tight(e.predecessorTaskId,id,e.lagDays)))walk(id,[]);
  return {snapshotId,startDay:Math.min(...Array.from(result.values(),t=>t.es)),finishDay,tasks:graph.order.map(id=>result.get(id)!),criticalPaths,pathsTruncated};
 }
+
+/**
+ * Re-run only the backward pass on scenario timings, fixing delivery to the
+ * original baseline finish. Unlike CPM totalFloat, this margin may be negative.
+ * The scenario's own CPM snapshot and critical-path flags remain untouched.
+ */
+export function calculateMarginsToFixedFinish(tasks:ScheduleTask[],dependencies:Dependency[],schedule:ScheduleSnapshot,finishDay:number,changes:ScheduleChanges={},finishId='DEL'):Map<string,number>{
+ if(!Number.isFinite(finishDay))throw new Error('Invalid fixed delivery deadline.');
+ const graph=buildGraph(tasks,dependencies,finishId);
+ const byId=new Map(schedule.tasks.map(task=>[task.taskId,task]));
+ if(byId.size!==graph.order.length||graph.order.some(id=>!byId.has(id)))throw new Error('Schedule does not match the dependency network.');
+ const latestStart=new Map<string,number>();
+ const margins=new Map<string,number>();
+ for(const id of [...graph.order].reverse()){
+  const task=byId.get(id)!;
+  const successors=graph.outgoing.get(id)!;
+  const deadline=successors.length?Math.min(...successors.map(edge=>latestStart.get(edge.successorTaskId)!-edge.lagDays)):finishDay;
+  const ls=latestWork(deadline,task.durationDays,windowFor(id,changes));
+  latestStart.set(id,ls);
+  margins.set(id,clean(ls-task.es));
+ }
+ return margins;
+}

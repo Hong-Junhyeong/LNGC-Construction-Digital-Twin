@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, CalendarDays, ChevronRight, Package, ShieldAlert, Wind } from "lucide-react";
+import { ArrowRight, CalendarDays, ChevronRight, Layers3, Package, ShieldAlert, ShieldCheck, Wind } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTwin } from "@/application/TwinContext";
@@ -28,7 +28,7 @@ export default function Overview() {
     <div className="overview-redesign">
       <section className="overview-hero" aria-labelledby="overview-title">
         <figure className="hero-vessel" aria-label="Reference vessel visual">
-          <Image src="/images/reference-vessel.png" fill sizes="(max-width: 820px) 100vw, calc(100vw - 208px)" priority unoptimized alt="Supplied conceptual image of a green-hulled LNG carrier with two forward Wind Challenger sails" />
+          <Image src="/images/overview-vessel-wide.png" fill sizes="(max-width: 820px) 100vw, calc(100vw - 208px)" priority unoptimized alt="Wide sunset image of a green-hulled LNG carrier with two Wind Challenger towers" />
           <figcaption><span>REFERENCE VESSEL</span><strong>174K MEMBRANE LNGC</strong><small>Conceptual visual · geometry unverified</small></figcaption>
         </figure>
         <div className="hero-copy">
@@ -55,12 +55,12 @@ export default function Overview() {
         <div className="overview-playback"><DayContextBar /></div>
         <div className="overview-kpi-strip">
           <div>
-            <span className="kpi-strip-value">{overallProgress}<small>%</small></span><strong>Overall progress</strong><small>S{playbackStep} · block {blockProgress}%</small>
+            <strong>Overall progress</strong><div className="kpi-strip-reading"><span className="kpi-progress-ring" style={{ background: `conic-gradient(var(--status-complete) ${overallProgress}%, #e1ece9 0)` }} aria-hidden="true" /><span className="kpi-strip-value">{overallProgress}<small>%</small></span></div><small>S{playbackStep} · block {blockProgress}% · cargo {cargoProgress}%</small>
             <Meter value={overallProgress} label="Overall planned progress" /><DataSourceBadge type="DERIVED" />
           </div>
-          <div><span className="kpi-strip-value"><small>D</small>{baselineSchedule.finishDay}</span><strong>Baseline delivery</strong><small>Educational schedule</small><DataSourceBadge type="ASSUMPTION" /></div>
-          <div><span className="kpi-strip-value">{summary.materialReadiness}<small>%</small></span><strong>Material readiness</strong><small>Mock availability at S{playbackStep}</small><DataSourceBadge type="DERIVED" /></div>
-          <div><span className="kpi-strip-value">{summary.releasedGates}<small> / 9</small></span><strong>Quality gates</strong><small>{summary.openNcr} open NCR · {summary.plannedRework} MH plan</small><DataSourceBadge type="DERIVED" /></div>
+          <div><strong>Baseline delivery</strong><div className="kpi-strip-reading"><CalendarDays size={25} aria-hidden="true" /><span className="kpi-strip-value">{baselineSchedule.finishDay}<small> DAY</small></span></div><small>Educational schedule · not a live forecast</small><DataSourceBadge type="ASSUMPTION" /></div>
+          <div><strong>Material readiness</strong><div className="kpi-strip-reading"><Layers3 size={25} aria-hidden="true" /><span className="kpi-strip-value">{summary.materialReadiness}<small>%</small></span></div><small>Mock material availability at S{playbackStep}</small><DataSourceBadge type="DERIVED" /></div>
+          <div><strong>Quality gates</strong><div className="kpi-strip-reading"><ShieldCheck size={25} aria-hidden="true" /><span className="kpi-strip-value">{summary.releasedGates}<small> / 9</small></span></div><small>{summary.openNcr} open NCR · {summary.plannedRework} planned rework MH</small><DataSourceBadge type="DERIVED" /></div>
         </div>
       </section>
 

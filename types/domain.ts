@@ -279,6 +279,9 @@ export interface TaskImpact {
   scenarioFinish: number;
   finishDelta: number;
   direct: boolean;
+  /** Margin against the original baseline delivery, independent of scenario CPM float. */
+  baselineDeliveryMarginBefore: number;
+  baselineDeliveryMarginAfter: number;
 }
 export interface FloatChange {
   taskId: string;
