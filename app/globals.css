@@ -533,3 +533,65 @@ tr[data-scenario=true] .source{display:inline-block;margin-top:6px}
   .intro-splash { animation: intro-splash-reduced 5000ms steps(1, end) both !important; }
 }
 @keyframes intro-splash-reduced { 0%, 89.99% { opacity: 1; visibility: visible; pointer-events: auto; } 90%, 100% { opacity: 0; visibility: hidden; pointer-events: none; } }
+
+/* P20.1.2.1 — Final visual contrast tuning */
+:root{
+  --industrial-page:#e7edf1;
+  --industrial-surface:#ffffff;
+  --industrial-secondary:#e1e9ee;
+
+  --industrial-border:#b4c3cd;
+  --industrial-border-strong:#93a7b4;
+
+  --industrial-blue:#075f96;
+  --industrial-blue-dark:#084766;
+  --industrial-blue-soft:#dceaf2;
+
+  --industrial-navy:#153044;
+  --industrial-slate:#526b7c;
+
+  --sidebar:#e2eaef;
+  --sidebar-border:#b8c6cf;
+}
+
+body,
+.page-content{
+  background:var(--industrial-page);
+}
+
+.navigation [data-sidebar=sidebar]{
+  background:var(--sidebar);
+  border-color:var(--sidebar-border);
+}
+
+.overview-section,
+.overview-control-strip,
+.panel,
+.kpi,
+.selection-panel{
+  background:#ffffff;
+  border-color:var(--industrial-border);
+}
+
+.overview-playback,
+.panel-head,
+.timeline-dock{
+  background:#f1f5f7;
+}
+
+.panel,
+.kpi,
+.selection-panel{
+  box-shadow:0 2px 6px rgba(21,48,68,.08);
+  border-radius:4px;
+}
+
+.overview-kpi-strip{
+  background:#ffffff;
+}
+
+.nav-item[data-active=true]{
+  background:#cfdfe8!important;
+  color:var(--industrial-blue-dark)!important;
+  box-shadow:inset 3px 0 0 var(--industrial-blue)!important;
+}
