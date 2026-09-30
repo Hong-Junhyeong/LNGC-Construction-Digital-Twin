@@ -595,3 +595,7 @@ body,
   color:var(--industrial-blue-dark)!important;
   box-shadow:inset 3px 0 0 var(--industrial-blue)!important;
 }
+
+.nav-item[data-active=true]{
+  font-weight:700!important;
+}
