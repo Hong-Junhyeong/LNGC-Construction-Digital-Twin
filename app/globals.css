@@ -268,7 +268,12 @@ body{background:var(--industrial-page);color:var(--industrial-navy);font-feature
 h1{font-weight:650;letter-spacing:-1.25px}h2{font-weight:650;color:var(--industrial-navy)}
 .eyebrow{color:var(--industrial-blue-dark);letter-spacing:1.35px}
 .page-content{max-width:1760px;padding:34px clamp(24px,3vw,54px) 48px}
-.panel,.kpi,.selection-panel{box-shadow:none;border-color:#e1e6e9;border-radius:4px}
+.panel,.kpi,.selection-panel{
+  background:#fff;
+  border-color:var(--industrial-border);
+  box-shadow:0 2px 6px rgba(21,48,68,.07);
+  border-radius:4px;
+}
 .panel-head{background:transparent;padding:18px 20px}
 .kpi{border-top:1px solid var(--industrial-border);min-height:154px}
 .primary-link,.secondary-link{border-radius:3px;min-height:40px}
@@ -389,15 +394,16 @@ tr[data-scenario=true] .source{display:inline-block;margin-top:6px}
 
 /* Overview composition: supplied wide vessel asset, with the caption above its light overlay. */
 :root{
-  --industrial-page:#f5f7f8;
-  --industrial-secondary:#edf1f3;
-  --industrial-border:#cbd5dc;
-  --industrial-border-strong:#aebcc6;
-  --industrial-blue:#0b5f8f;
+  --industrial-page:#eaf0f4;
+  --industrial-surface:#ffffff;
+  --industrial-secondary:#e3ebf0;
+  --industrial-border:#b9c7d1;
+  --industrial-border-strong:#96a9b6;
+  --industrial-blue:#075f96;
   --industrial-blue-dark:#084766;
-  --industrial-blue-soft:#e7f0f5;
-  --industrial-navy:#163044;
-  --industrial-slate:#5b7080;
+  --industrial-blue-soft:#dceaf2;
+  --industrial-navy:#153044;
+  --industrial-slate:#526b7c;
 }
 .overview-redesign{gap:20px}
 .overview-hero{--hero-min-height:clamp(390px,35vw,490px);position:relative;isolation:isolate;min-height:var(--hero-min-height);overflow:hidden;border:1px solid var(--industrial-border);background:#d8e7ef}
