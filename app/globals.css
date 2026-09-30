@@ -596,6 +596,10 @@ body,
   box-shadow:inset 3px 0 0 var(--industrial-blue)!important;
 }
 
+.nav-item{
+  font-weight:600!important;
+}
+
 .nav-item[data-active=true]{
   font-weight:700!important;
 }
