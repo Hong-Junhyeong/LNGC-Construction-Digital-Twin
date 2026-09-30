@@ -34,6 +34,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { TwinProvider, useTwin } from "@/application/TwinContext";
+import IntroSplash from "./IntroSplash";
 import WebMcpTools from "@/application/WebMcpTools";
 import { DataSourceBadge } from "@/components/dashboard/Primitives";
 const nav = [
@@ -201,6 +202,7 @@ function Shell({ children }: { children: React.ReactNode }) {
 export default function AppShell({ children }: { children: React.ReactNode }) {
   return (
     <TwinProvider>
+      <IntroSplash />
       <WebMcpTools />
       <a className="skip-link" href="#main-content">
         Skip to content
