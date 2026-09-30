@@ -596,10 +596,11 @@ body,
   box-shadow:inset 3px 0 0 var(--industrial-blue)!important;
 }
 
-.nav-item{
+.nav-item[data-active=true]{
   color:#ffffff!important;
 }
 
-.nav-item small{
+.nav-item[data-active=true] svg,
+.nav-item[data-active=true] small{
   color:#ffffff!important;
 }
