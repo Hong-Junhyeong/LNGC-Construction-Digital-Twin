@@ -389,15 +389,15 @@ tr[data-scenario=true] .source{display:inline-block;margin-top:6px}
 
 /* Overview composition: supplied wide vessel asset, with the caption above its light overlay. */
 :root{
-  --industrial-page:#eef2f5;
-  --industrial-secondary:#e7edf1;
-  --industrial-border:#c8d2d9;
-  --industrial-border-strong:#aab9c4;
-  --industrial-blue:#075f96;
-  --industrial-blue-dark:#064b76;
-  --industrial-blue-soft:#e3eef5;
-  --industrial-navy:#102a3d;
-  --industrial-slate:#52697a;
+  --industrial-page:#f5f7f8;
+  --industrial-secondary:#edf1f3;
+  --industrial-border:#cbd5dc;
+  --industrial-border-strong:#aebcc6;
+  --industrial-blue:#0b5f8f;
+  --industrial-blue-dark:#084766;
+  --industrial-blue-soft:#e7f0f5;
+  --industrial-navy:#163044;
+  --industrial-slate:#5b7080;
 }
 .overview-redesign{gap:20px}
 .overview-hero{--hero-min-height:clamp(390px,35vw,490px);position:relative;isolation:isolate;min-height:var(--hero-min-height);overflow:hidden;border:1px solid var(--industrial-border);background:#d8e7ef}
