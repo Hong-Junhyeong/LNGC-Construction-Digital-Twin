@@ -597,7 +597,7 @@ body,
 }
 
 .nav-item{
-  font-weight:600!important;
+  font-weight:500!important;
 }
 
 .nav-item[data-active=true]{
